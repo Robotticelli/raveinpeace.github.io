@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>Rave In Peace Merged</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1" name="viewport" />
 <meta name="application-name" content="SugarCube" />
 <meta name="version" content="2.37.3" />
 <!--
@@ -104,7 +104,69 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Rave In Peace Merged" startnode="10" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="705DFB0D-D989-4DFE-B562-45B03842E479" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+	<tw-storydata name="Rave In Peace Merged" startnode="10" creator="Twine" creator-version="2.9.2" format="SugarCube" format-version="2.37.3" ifid="705DFB0D-D989-4DFE-B562-45B03842E479" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@font-face {
+  font-family: 'Wild2';
+  src: url('fonts/wild2ghixmnc-zw9k-webfont.woff2') format('woff2');
+}
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
+#ui-bar {
+    display: none;
+}
+
+h1 {
+    font-family: 'Wild2';
+    font-size: 4.5rem;
+}
+
+h2 {
+  	font-family: 'Wild2';
+    font-size: 2.5rem;
+}
+
+.h2-like{
+  	font-family: 'Wild2';
+    font-size: 2.5rem;
+}
+
+h3 {
+  	font-family: 'Wild2';
+    font-size: 2rem;
+}
+
+.passage {
+  	font-size: 1.2rem;
+   	font-family: 'Crimson Text', serif;
+   	font-weight:400;
+ 	text-align: Center; 
+}
+
+.passage button {
+  border: 4px solid #989898;
+  color: lightgrey;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5px 1px;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #444444;
+  /*background: linear-gradient(80deg, #07aeaf, #c10405, #9c7134, #ec9cec);
+  background-size: 1500% 400%;
+  animation: gradient-animation 21s linear infinite;*/
+}
+
+/*Clyde 2 - Simon Says*/
+
+body {
   background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/nasty_fabric.png)
 }
 
@@ -115,7 +177,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
 .button {
   border-radius: 50% !important;
-  font-size: 1.5em;
+  font-size: 1em;
   background-color: lightgray;
 }
 
@@ -268,10 +330,37 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   -webkit-box-sizing: border-box;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">importScripts("https://aframe.io/releases/1.6.0/aframe.min.js", "https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js");
+/*Oswald 2 - Dark Presence*/
 
+#progress-bar-container {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(270deg,darkviolet,#56107e,#421e61,#7605d4);
+  background-size: 240% 240%;
+  animation: gradient-animation 16s ease infinite;
+    /*background-color: #6f2da8;*/
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
 
-window.simonWinner = function (){
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #76d8f1;
+    width: 0%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.simonWinner = function (){
   Engine.play("Clyde 3");
 };
 
@@ -281,8 +370,9 @@ window.winner = function(passage) {
 
 window.bulletwinner = function() {
     Engine.play("win")
-};</script><tw-passagedata pid="1" name="0.1" tags="" position="675,300" size="100,100">Choose your Path
+};
 
+</script><tw-passagedata pid="1" name="0.1" tags="" position="675,300" size="100,100">&lt;h2&gt;Choose your Path&lt;/h2&gt;
 &lt;&lt;nobr&gt;&gt;
 	&lt;&lt;do&gt;&gt;
 		&lt;&lt;if $inky_done&gt;&gt;
@@ -325,7 +415,7 @@ window.bulletwinner = function() {
 
 &lt;&lt;if $inky_done &amp;&amp; $pinky_done &amp;&amp; $blinky_done &amp;&amp; $clyde_done&gt;&gt;
 &lt;&lt;button [[END |End]]&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="" position="925,50" size="100,100">//...Find my gravestone...//
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="" position="925,50" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;inky_grave_puzzle.png&quot; width=&quot;30%&quot; height=&quot;auto&quot;&gt;
 
@@ -362,7 +452,7 @@ Please input a Password to continue.
 
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="" position="925,500" size="100,100">//...Find my gravestone...//
+</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="" position="925,500" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;clyde_grave_puzzle.png&quot; width=&quot;30%&quot; height=&quot;auto&quot;&gt;
 
@@ -395,10 +485,9 @@ Please input a Password to continue. /*(The correct password is &quot;bit the du
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="4" name="Oswald 2" tags="" position="1050,50" size="100,100">Don&#39;t let take over!
-
-&lt;html&gt; &lt;div id=&quot;game-container&quot;&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Oswald 2" tags="" position="1050,50" size="100,100">&lt;html&gt; &lt;div id=&quot;game-container&quot;&gt;
         &lt;h1&gt;Dark Pressence&lt;/h1&gt;
+        &lt;br&gt;Don&#39;t let the evil spirits take over!
         
         &lt;div id=&quot;progress-bar-container&quot;&gt;
             &lt;div id=&quot;progress-bar&quot;&gt;&lt;/div&gt;
@@ -410,11 +499,10 @@ Please input a Password to continue. /*(The correct password is &quot;bit the du
         &lt;p id=&quot;game-time&quot;&gt;&lt;span id=&quot;timer&quot;&gt;&lt;/span&gt;&lt;/p&gt;
         &lt;div id=&quot;linkContainer&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
-
 &lt;script&gt;
 // Initialize the game variables
 let progress = 0;  // Track the current progress (0 to 100)
-let decayRate = 4.5;  // Rate at which the progress decays per second
+let decayRate = 3.5;  // Rate at which the progress decays per second
 let gameDuration = 30;  // Total game time in seconds
 let timerInterval;
 let decayInterval;
@@ -487,10 +575,16 @@ function endGame(won) {
     ${Math.round(progress)}%`;
     
     if (won) {
-        const winText = document.createTextNode(&quot;POSSESS&quot;);
+        const winText = document.createElement(&#39;span&#39;);
+        winText.innerText = &quot;POSSESS&quot;;
+        winText.style.fontFamily = &quot;Wild2&quot;;
+        winText.style.fontSize=&quot;2.5rem&quot;;
         linkContainer.appendChild(winText);
     } else {
-        const loseText = document.createTextNode(&quot;Try Again?&quot;);
+        const loseText = document.createElement(&#39;span&#39;);
+        loseText.innerText=&quot;Try Again?&quot;;
+        loseText.style.fontFamily = &quot;Wild2&quot;;
+        loseText.style.fontSize=&quot;2.5rem&quot;;
         linkContainer.appendChild(loseText);
     }
 
@@ -499,16 +593,17 @@ function endGame(won) {
 }
 
 &lt;/script&gt;&lt;/html&gt;
-
-Press the start button to keep the ghosts at bay!. If successful, enter the secret phrase below..
+Press the start button to keep the ghosts at bay, if you&#39;re successful, enter the secret phrase below.
 
 &lt;&lt;button &quot;START&quot;&gt;&gt;&lt;&lt;run startGame()&gt;&gt;&lt;&lt;/button&gt;&gt;
 
-Secret Phrase: &lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;
+Secret Phrase:
+&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;
+
 &lt;&lt;button &quot;SUBMIT&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
-		&lt;&lt;script&gt;&gt;UI.alert(&quot;Translate the phrase&quot;);&lt;&lt;/script&gt;&gt;
+		&lt;&lt;script&gt;&gt;UI.alert(&quot;Enter the secret phrase&quot;);&lt;&lt;/script&gt;&gt;
 	&lt;&lt;else&gt;&gt;
 		/%
 			Remove extra white space from both ends of the answer then
@@ -567,7 +662,7 @@ Secret Phrase: &lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;
     &lt;div id=&quot;inner-circle&quot;&gt;
       &lt;div id=&quot;title-NAME&quot; class=&quot;font-effect-emboss&quot;&gt;SIMON!&lt;/div&gt;
       &lt;div id=&quot;switches&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot; id=&quot;on&quot;&gt;
+       &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot; id=&quot;on&quot;&gt;
         &lt;button class=&quot;button&quot; id=&quot;start&quot;&gt;Start&lt;/button&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot; id=&quot;strict&quot;&gt;
       &lt;/div&gt;
@@ -597,7 +692,7 @@ let compTurn; //TRUE or FALSE is it the computers turn
 let intervalId;
 let strict = false; //has STRICT been checked?
 let noise = true; //Sound
-let on = false;
+let on = false; // allow start button to begin game
 let win;
 
 var audio1 = document.getElementById(&quot;clip1&quot;);
@@ -615,6 +710,7 @@ const strictButton = document.querySelector(&quot;#strict&quot;);
 const onButton = document.querySelector(&quot;#on&quot;);
 const startButton = document.querySelector(&quot;#start&quot;);
 
+
 strictButton.addEventListener(&#39;click&#39;,(event)=&gt; {
     if(strictButton.checked == true){
         strict = true;
@@ -623,7 +719,7 @@ strictButton.addEventListener(&#39;click&#39;,(event)=&gt; {
     }
 });
 
-onButton.addEventListener(&#39;click&#39;,(event) =&gt; {
+    onButton.addEventListener(&#39;click&#39;,(event) =&gt; {
     if (onButton.checked == true) {
         on = true;
         turnCounter.innerHTML = &quot;-&quot;; //places a &quot;-&quot; into the turn counter element when power is on
@@ -781,7 +877,7 @@ function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
         good = false;
 
-    if (playerOrder.length == 5 &amp;&amp; good){
+    if (playerOrder.length == 6 &amp;&amp; good){
         winGame();
     }
     
@@ -894,16 +990,9 @@ function winGame(){
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
 &lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Oswald 3" tags="" position="1175,50" size="100,100">We looking for something special now huh?
 
-&lt;div&gt;&lt;a-scene embedded arjs=&#39;displayWidth: 300; displayHeight: 300;canvasWidth: 300; canvasHeight: 300;&#39;&gt;
-      &lt;a-marker preset=&quot;hiro&quot;&gt;
-     &lt;a-box position=&quot;0 0 0&quot; 
-               material=&quot;color: red; transparent: true; opacity: 0.70;&quot;&gt;
-        &lt;/a-box&gt;
-      &lt;/a-marker&gt;
-    &lt;/a-scene&gt;
- &lt;/div&gt;
+ &lt;iframe src=&quot;https://rave-in-peace-ar-robotticelli.replit.app/&quot; height=&quot;300&quot; width=&quot;300&quot; title=&quot;AR Scanner&quot; allow=&quot;camera https://rave-in-peace-ar-robotticelli.replit.app/; microphone https://rave-in-peace-ar-robotticelli.replit.app&quot;/&gt;
 
-&lt;div style= position: relative; top: 50px;&quot;&gt;
+
 &lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;
 
 &lt;&lt;button &quot;Submit&quot;&gt;&gt;
@@ -931,7 +1020,6 @@ function winGame(){
 		&lt;&lt;/if&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 </tw-passagedata><tw-passagedata pid="9" name="Oswald 4" tags="" position="1300,50" size="100,100">... Seek the hand. Decipher it&#39;s message... 
@@ -971,11 +1059,11 @@ function winGame(){
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
 &lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Opening" tags="" position="500,325" size="100,100">&lt;&lt;set $done_inky to false, $done_blinky to false, $done_pinky to false, $done_clyde to false&gt;&gt;
 
+&lt;h2&gt;It&#39;s Time for you to prove yourself.&lt;/h2&gt;
 THE GHOSTS ARE OUT THERE!
+You ready to quiet their ever-pulsing souls before the night is through?
 
-You ready to quiet their ever-beating souls?
-
-&lt;&lt;button[[ YES |0.1]]&gt;&gt; &lt;&lt;/button &gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Rose 1" tags="" position="925,200" size="100,100">//...Find my gravestone...//
+&lt;&lt;button[[ YES |0.1]]&gt;&gt; &lt;&lt;/button &gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Rose 1" tags="" position="925,200" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;pinky_grave_puzzle.png&quot; width=&quot;30%&quot; height=&quot;auto&quot;&gt;
 
@@ -1010,7 +1098,7 @@ Please input a password to continue.
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="Henrietta 1" tags="" position="925,350" size="100,100">//...Find my gravestone...//
+</tw-passagedata><tw-passagedata pid="12" name="Henrietta 1" tags="" position="925,350" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;blinky_grave_puzzle.png&quot; width=&quot;30%&quot; height=&quot;auto&quot;&gt;
 &lt;&lt;set _answer to &quot;kicked the bucket&quot;&gt;&gt;
@@ -1046,191 +1134,262 @@ Please input a password to continue. /*(The correct password is &quot;kicked the
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 </tw-passagedata><tw-passagedata pid="13" name="Rose 2" tags="" position="1050,200" size="100,100">//...play my cool ass minigame...//
 
-&lt;html&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot; /&gt;
-    &lt;title&gt;Gamedev Canvas Workshop - lesson 10: finishing up&lt;/title&gt;
-    &lt;style&gt;* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }&lt;/style&gt;
+  &lt;style&gt;
+    * { padding: 0; margin: 0; box-sizing: border-box; }
+    body { background: #1a1a1a; }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      background: #2c2c2c;
+      border: 2px solid #444;
+      touch-action: none;
+    }
+  &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
+  &lt;canvas id=&quot;myCanvas&quot; width=&quot;360&quot; height=&quot;640&quot;&gt;&lt;/canvas&gt;
+  &lt;script&gt;
+    const canvas = document.getElementById(&quot;myCanvas&quot;);
+    const ctx = canvas.getContext(&quot;2d&quot;);
 
-&lt;canvas id=&quot;myCanvas&quot; width=&quot;480&quot; height=&quot;320&quot;&gt;&lt;/canvas&gt;
+    let ballRadius = 10;
+    let x, y, dx, dy;
 
-&lt;script&gt;
-    var canvas = document.getElementById(&quot;myCanvas&quot;);
-    var ctx = canvas.getContext(&quot;2d&quot;);
-    var ballRadius = 10;
-    var x = canvas.width/2;
-    var y = canvas.height-30;
-    var dx = 2;
-    var dy = -2;
-    var paddleHeight = 10;
-    var paddleWidth = 75;
-    var paddleX = (canvas.width-paddleWidth)/2;
-    var rightPressed = false;
-    var leftPressed = false;
-    var brickRowCount = 5;
-    var brickColumnCount = 3;
-    var brickWidth = 75;
-    var brickHeight = 20;
-    var brickPadding = 10;
-    var brickOffsetTop = 30;
-    var brickOffsetLeft = 30;
-    var score = 0;
-    var lives = 3;
-    var winner;
+    let paddleHeight = 10;
+    let paddleWidth = 80;
+    let paddleX = (canvas.width - paddleWidth) / 2;
 
-    var bricks = [];
-    for(var c=0; c&lt;brickColumnCount; c++) {
-        bricks[c] = [];
-        for(var r=0; r&lt;brickRowCount; r++) {
-            bricks[c][r] = { x: 0, y: 0, status: 1 };
+    let lives = 3;
+    let gameStarted = false;
+    let gameOver = false;
+
+    let particles = [];
+
+    const ghostShape = [
+      [0, 1, 1, 1, 0],
+      [1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1],
+      [1, 0, 1, 0, 1],
+      [1, 1, 1, 1, 1],
+      [1, 1, 1, 1, 1],
+      [1, 0, 1, 0, 1]
+    ];
+
+    let bricks = [];
+    const brickRowCount = ghostShape.length;
+    const brickColumnCount = ghostShape[0].length;
+    const brickWidth = 60;
+    const brickHeight = 20;
+    const brickPadding = 5;
+    const brickOffsetTop = 60;
+    const brickOffsetLeft = 30;
+
+    function initBricks() {
+      bricks = [];
+      for (let r = 0; r &lt; brickRowCount; r++) {
+        bricks[r] = [];
+        for (let c = 0; c &lt; brickColumnCount; c++) {
+          if (ghostShape[r][c] === 1) {
+            bricks[r][c] = { x: 0, y: 0, status: 1 };
+          } else {
+            bricks[r][c] = null;
+          }
         }
+      }
     }
 
-    document.addEventListener(&quot;keydown&quot;, keyDownHandler, false);
-    document.addEventListener(&quot;keyup&quot;, keyUpHandler, false);
-    document.addEventListener(&quot;mousemove&quot;, mouseMoveHandler, false);
-
-    function keyDownHandler(e) {
-        if(e.code  == &quot;ArrowRight&quot;) {
-            rightPressed = true;
+    function drawBricks() {
+      for (let r = 0; r &lt; brickRowCount; r++) {
+        for (let c = 0; c &lt; brickColumnCount; c++) {
+          const b = bricks[r][c];
+          if (b &amp;&amp; b.status === 1) {
+            const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
+            const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
+            b.x = brickX;
+            b.y = brickY;
+            ctx.beginPath();
+            ctx.rect(brickX, brickY, brickWidth, brickHeight);
+            ctx.fillStyle = &quot;#FFB8FF&quot;;
+            ctx.fill();
+            ctx.closePath();
+          }
         }
-        else if(e.code == &#39;ArrowLeft&#39;) {
-            leftPressed = true;
-        }
-    }
-    function keyUpHandler(e) {
-        if(e.code == &#39;ArrowRight&#39;) {
-            rightPressed = false;
-        }
-        else if(e.code == &#39;ArrowLeft&#39;) {
-            leftPressed = false;
-        }
-    }
-    function mouseMoveHandler(e) {
-        var relativeX = e.clientX - canvas.offsetLeft;
-        if(relativeX &gt; 0 &amp;&amp; relativeX &lt; canvas.width) {
-            paddleX = relativeX - paddleWidth/2;
-        }
-    }
-    function collisionDetection() {
-        for(var c=0; c&lt;brickColumnCount; c++) {
-            for(var r=0; r&lt;brickRowCount; r++) {
-                var b = bricks[c][r];
-                if(b.status == 1) {
-                    if(x &gt; b.x &amp;&amp; x &lt; b.x+brickWidth &amp;&amp; y &gt; b.y &amp;&amp; y &lt; b.y+brickHeight) {
-                        dy = -dy;
-                        b.status = 0;
-                        score++;
-                        if(score == brickRowCount*brickColumnCount) {
-                        winner;
-                      window.winner(&quot;Rose 3&quot;);
-                            //alert(&quot;YOU WIN, CONGRATS!&quot;);
-                            //document.location.reload();
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
 
     function drawBall() {
-        ctx.beginPath();
-        ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-        ctx.fillStyle = &quot;#0095DD&quot;;
-        ctx.fill();
-        ctx.closePath();
+      ctx.beginPath();
+      ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+      ctx.fillStyle = &quot;#FFFFFF&quot;;
+      ctx.shadowColor = &quot;#AAF&quot;;
+      ctx.shadowBlur = 15;
+      ctx.fill();
+      ctx.closePath();
+      ctx.shadowBlur = 0;
     }
+
     function drawPaddle() {
+      ctx.beginPath();
+      ctx.rect(paddleX, canvas.height - paddleHeight - 10, paddleWidth, paddleHeight);
+      ctx.fillStyle = &quot;#FFFFFF&quot;;
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function drawParticles() {
+      for (let p of particles) {
         ctx.beginPath();
-        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-        ctx.fillStyle = &quot;#0095DD&quot;;
+        ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 184, 255, ${p.alpha})`;
         ctx.fill();
-        ctx.closePath();
+        p.alpha -= 0.03;
+      }
     }
-    function drawBricks() {
-        for(var c=0; c&lt;brickColumnCount; c++) {
-            for(var r=0; r&lt;brickRowCount; r++) {
-                if(bricks[c][r].status == 1) {
-                    var brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
-                    var brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
-                    bricks[c][r].x = brickX;
-                    bricks[c][r].y = brickY;
-                    ctx.beginPath();
-                    ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                    ctx.fillStyle = &quot;#0095DD&quot;;
-                    ctx.fill();
-                    ctx.closePath();
-                }
-            }
-        }
+
+    function updateParticles() {
+      particles.push({ x, y, alpha: 1 });
+      if (particles.length &gt; 30) particles.shift();
     }
-    function drawScore() {
-        ctx.font = &quot;16px Arial&quot;;
-        ctx.fillStyle = &quot;#0095DD&quot;;
-        ctx.fillText(&quot;Score: &quot;+score, 8, 20);
-    }
+
     function drawLives() {
-        ctx.font = &quot;16px Arial&quot;;
-        ctx.fillStyle = &quot;#0095DD&quot;;
-        ctx.fillText(&quot;Lives: &quot;+lives, canvas.width-65, 20);
+      const radius = 8;
+      const spacing = 20;
+      const startX = canvas.width - 100;
+      for (let i = 0; i &lt; 3; i++) {
+        if (i &lt; lives) {
+          ctx.beginPath();
+          ctx.arc(startX + i * spacing, 25, radius, 0, Math.PI * 2);
+          ctx.fillStyle = &quot;#FFB8FF&quot;;
+          ctx.fill();
+          ctx.closePath();
+        }
+      }
+    }
+
+    function collisionDetection() {
+      for (let r = 0; r &lt; brickRowCount; r++) {
+        for (let c = 0; c &lt; brickColumnCount; c++) {
+          const b = bricks[r][c];
+          if (b &amp;&amp; b.status === 1) {
+            if (x &gt; b.x &amp;&amp; x &lt; b.x + brickWidth &amp;&amp; y &gt; b.y &amp;&amp; y &lt; b.y + brickHeight) {
+              dy = -dy;
+              b.status = 0;
+              if (checkWin()) {
+                window.winner(&quot;Rose 3&quot;);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    function checkWin() {
+      for (let r of bricks) {
+        for (let b of r) {
+          if (b &amp;&amp; b.status === 1) return false;
+        }
+      }
+      return true;
+    }
+
+    function resetBall() {
+      x = canvas.width / 2;
+      y = canvas.height - 60;
+      dx = 2;
+      dy = -2;
+      paddleX = (canvas.width - paddleWidth) / 2;
+    }
+
+    function drawOverlay(title, button) {
+      ctx.fillStyle = &quot;rgba(0, 0, 0, 0.85)&quot;;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = &quot;#FFF&quot;;
+      ctx.font = &quot;24px Arial&quot;;
+      ctx.textAlign = &quot;center&quot;;
+      ctx.fillText(title, canvas.width / 2, canvas.height / 2 - 20);
+
+      ctx.fillStyle = &quot;#FFB8FF&quot;;
+      ctx.fillRect(canvas.width / 2 - 60, canvas.height / 2 + 10, 120, 40);
+
+      ctx.fillStyle = &quot;#000&quot;;
+      ctx.font = &quot;16px Arial&quot;;
+      ctx.fillText(button, canvas.width / 2, canvas.height / 2 + 36);
     }
 
     function draw() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawBricks();
-        drawBall();
-        drawPaddle();
-        drawScore();
-        drawLives();
-        collisionDetection();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        if(x + dx &gt; canvas.width-ballRadius || x + dx &lt; ballRadius) {
-            dx = -dx;
-        }
-        if(y + dy &lt; ballRadius) {
-            dy = -dy;
-        }
-        else if(y + dy &gt; canvas.height-ballRadius) {
-            if(x &gt; paddleX &amp;&amp; x &lt; paddleX + paddleWidth) {
-                dy = -dy;
-            }
-            else {
-                lives--;
-                if(!lives) {
-                    //alert(&quot;GAME OVER&quot;);
-                    document.location.reload();
-                }
-                else {
-                    x = canvas.width/2;
-                    y = canvas.height-30;
-                    dx = 2;
-                    dy = -2;
-                    paddleX = (canvas.width-paddleWidth)/2;
-                }
-            }
-        }
+      drawBricks();
+      drawParticles();
+      drawBall();
+      drawPaddle();
+      drawLives();
+      collisionDetection();
+      updateParticles();
 
-        if(rightPressed &amp;&amp; paddleX &lt; canvas.width-paddleWidth) {
-            paddleX += 7;
+      if (x + dx &gt; canvas.width - ballRadius || x + dx &lt; ballRadius) dx = -dx;
+      if (y + dy &lt; ballRadius) dy = -dy;
+      else if (y + dy &gt; canvas.height - ballRadius - paddleHeight - 10) {
+        if (x &gt; paddleX &amp;&amp; x &lt; paddleX + paddleWidth) {
+          dy = -dy;
+        } else if (y + dy &gt; canvas.height - ballRadius) {
+          lives--;
+          if (!lives) {
+            gameOver = true;
+            drawOverlay(&quot;Game Over!&quot;, &quot;Play Again&quot;);
+            return;
+          } else {
+            resetBall();
+          }
         }
-        else if(leftPressed &amp;&amp; paddleX &gt; 0) {
-            paddleX -= 7;
-        }
+      }
 
-        x += dx;
-        y += dy;
-        requestAnimationFrame(draw);
+      x += dx;
+      y += dy;
+
+      requestAnimationFrame(draw);
     }
 
-    draw();
-&lt;/script&gt;
+    function startGame() {
+      gameStarted = true;
+      gameOver = false;
+      lives = 3;
+      initBricks();
+      resetBall();
+      draw();
+    }
 
+    // Input handlers
+    canvas.addEventListener(&quot;click&quot;, () =&gt; {
+      if (!gameStarted) {
+        startGame();
+      } else if (gameOver) {
+       document.location.reload();
+      }
+    });
+
+    canvas.addEventListener(&quot;touchstart&quot;, function (e) {
+      const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
+      paddleX = touchX - paddleWidth / 2;
+    });
+
+    canvas.addEventListener(&quot;touchmove&quot;, function (e) {
+      const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
+      paddleX = touchX - paddleWidth / 2;
+      if (paddleX &lt; 0) paddleX = 0;
+      if (paddleX + paddleWidth &gt; canvas.width) paddleX = canvas.width - paddleWidth;
+      e.preventDefault();
+    });
+
+    // Initial canvas render
+    drawOverlay(&quot;Destroy the ghost!&quot;, &quot;Start&quot;);
+  &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Henrietta 2" tags="" position="1050,350" size="100,100">//...play my cool ass minigame...//
+
+[[Debug Next|Rose 3]]</tw-passagedata><tw-passagedata pid="14" name="Henrietta 2" tags="" position="1050,350" size="100,100">//...play my cool ass minigame...//
 
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
