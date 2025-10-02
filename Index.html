@@ -125,11 +125,20 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   margin-right: 3em;
 }
 
-body {
+body.General {
     background-image: url("images/light-grey.png");
     background-repeat: repeat;
   	background-blend-mode: soft-light;
+  	
+}
+
+body.Oswald {
   	background-color: #142726;
+  	
+}
+
+body.Rose {
+  	background-color: #594847;
   	
 }
 
@@ -610,7 +619,7 @@ document.ondblclick = function (e) {
     e.preventDefault();
 }
 
-</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-passagedata pid="1" name="0.1" tags="" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
+</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-tag name="Oswald" color="blue"></tw-tag><tw-tag name="Rose" color="purple"></tw-tag><tw-tag name="Henrietta" color="red"></tw-tag><tw-tag name="Clyde" color="orange"></tw-tag><tw-tag name="General" color="green"></tw-tag><tw-passagedata pid="1" name="0.1" tags="General" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;do&gt;&gt;
 		&lt;&lt;if $inky_done&gt;&gt;
 		&lt;h3&gt;Oswald&#39;s Spirit has been calmed.&lt;/h3&gt;
@@ -650,7 +659,7 @@ document.ondblclick = function (e) {
 &lt;&lt;button [[END |End]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;button [[Reset Data |Restart]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="" position="925,50" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+&lt;&lt;button [[Reset Data |Restart]]&gt;&gt;&lt;&lt;/button&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="Oswald" position="925,50" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;inky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 
@@ -687,7 +696,7 @@ Please input a Password to continue.
 
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="" position="925,500" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="Clyde" position="925,500" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;clyde_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 
@@ -834,7 +843,7 @@ Press the start button to keep the ghosts at bay!
 &lt;&lt;button &quot;START&quot;&gt;&gt;&lt;&lt;run startGame()&gt;&gt;&lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Clyde 2" tags="" position="1050,500" size="100,100">(check the power box and press start)
+</tw-passagedata><tw-passagedata pid="5" name="Clyde 2" tags="Clyde" position="1050,500" size="100,100">(check the power box and press start)
 
 &lt;html&gt;
 
@@ -1131,7 +1140,7 @@ function winGame(){
 &lt;&lt;/script&gt;&gt;
 &lt;&lt;/done&gt;&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 3" tags="" position="1175,500" size="100,100">//...Seek the following symbol...//
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">//...Seek the following symbol...//
 &lt;p style=&quot;font-size:360%;&quot;&gt;💪&lt;/p&gt;
 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
@@ -1161,7 +1170,7 @@ function winGame(){
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Clyde 4" tags="" position="1300,500" size="100,100">//...Seek the following symbol...//
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Clyde 4" tags="Clyde" position="1300,500" size="100,100">//...Seek the following symbol...//
 &lt;p style=&quot;font-size:360%;&quot;&gt;🪞&lt;/p&gt;
 
 Look deeply inwards and &lt;strong&gt;B&lt;/strong&gt;urn the candles th&lt;strong&gt;R&lt;/strong&gt;ee.
@@ -1198,7 +1207,7 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $clyde_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Oswald 3" tags="" position="1175,50" size="100,100">Use the lens to find 5 hidden figures among you.
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Oswald 3" tags="Oswald" position="1175,50" size="100,100">Use the lens to find 5 hidden figures among you.
 
  &lt;iframe src=&quot;https://rave-in-peace-ar-robotticelli.replit.app/&quot; height=&quot;300&quot; width=&quot;300&quot; title=&quot;AR Scanner&quot; allow=&quot;camera https://rave-in-peace-ar-robotticelli.replit.app/; microphone https://rave-in-peace-ar-robotticelli.replit.app&quot;/&gt;
 
@@ -1232,7 +1241,7 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="9" name="Oswald 4" tags="" position="1300,50" size="100,100">... Seek the hand. Decipher it&#39;s message... 
+</tw-passagedata><tw-passagedata pid="9" name="Oswald 4" tags="Oswald" position="1300,50" size="100,100">... Seek the hand. Decipher it&#39;s message... 
 
 &lt;img src=&quot;HandOfGlory.png&quot; width=&quot;80%&quot; height=&quot;auto&quot;&gt;
 
@@ -1267,7 +1276,7 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $inky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Opening" tags="" position="500,325" size="100,100">&lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Opening" tags="General" position="500,325" size="100,100">&lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
 
 &lt;h2&gt;Prove your worth.&lt;/h2&gt;
 
@@ -1277,7 +1286,7 @@ There are 4 ghosts in your vicinity that need to finally be put to rest.
 are you ready?
 
 &lt;&lt;button[[ YES |0.1]]&gt;&gt; &lt;&lt;/button &gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="Rose 1" tags="" position="925,200" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Rose 1" tags="Rose" position="925,200" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;pinky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 
@@ -1312,7 +1321,7 @@ Please input a password to continue.
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="Henrietta 1" tags="" position="925,350" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Henrietta 1" tags="Henrietta" position="925,350" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
 
 &lt;img src=&quot;blinky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 &lt;&lt;set _answer to &quot;kicked the bucket&quot;&gt;&gt;
@@ -1346,7 +1355,7 @@ Please input a password to continue.
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Rose 2" tags="" position="1050,200" size="100,100">&lt;head&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Rose 2" tags="Rose" position="1050,200" size="100,100">&lt;head&gt;
   &lt;style&gt;
     * { padding: 0; margin: 0; box-sizing: border-box; }
     body { background: #1a1a1a; }
@@ -1601,7 +1610,7 @@ Please input a password to continue.
 &lt;/body&gt;
 
 
-[[Debug Next|Rose 3]]</tw-passagedata><tw-passagedata pid="14" name="Henrietta 2" tags="BH" position="1050,350" size="100,100">&lt;body&gt;
+[[Debug Next|Rose 3]]</tw-passagedata><tw-passagedata pid="14" name="Henrietta 2" tags="BH Henrietta" position="1050,350" size="100,100">&lt;body&gt;
   &lt;div id=&quot;BHgameContainer&quot;&gt;
     &lt;div id=&quot;BHhud&quot;&gt;
       &lt;div id=&quot;BHlives&quot;&gt;Lives: 3&lt;/div&gt;
@@ -1797,7 +1806,7 @@ function endGame(won) {
                material=&quot;color: red; transparent: true; opacity: 0.50;&quot;&gt;
         &lt;/a-box&gt;
       &lt;/a-marker&gt;
-    &lt;/a-scene&gt;</tw-passagedata><tw-passagedata pid="16" name="Henrietta 3" tags="" position="1175,350" size="100,100">//...seek out the sigils of old...they hold your next secret...//
+    &lt;/a-scene&gt;</tw-passagedata><tw-passagedata pid="16" name="Henrietta 3" tags="Henrietta" position="1175,350" size="100,100">//...seek out the sigils of old...they hold your next secret...//
 
 &lt;img src=&quot;sigilchart.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 
@@ -1830,7 +1839,7 @@ Enter the password.
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="17" name="Henrietta 4" tags="" position="1300,350" size="100,100">//...seek the following symbol...//
+</tw-passagedata><tw-passagedata pid="17" name="Henrietta 4" tags="Henrietta" position="1300,350" size="100,100">//...seek the following symbol...//
 
 &lt;p style=&quot;font-size:360%;&quot;&gt;🌟&lt;/p&gt;
 
@@ -1868,7 +1877,7 @@ Enter the password.
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $blinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Rose 3" tags="" position="1175,200" size="100,100">//...seek the following symbol...//
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Rose 3" tags="Rose" position="1175,200" size="100,100">//...seek the following symbol...//
 
 &lt;p style=&quot;font-size:360%;&quot;&gt;🔮&lt;/p&gt;
 
@@ -1902,7 +1911,7 @@ Enter the password.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Rose 4" tags="" position="1300,200" size="100,100">//...find the Ouija Board...//
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Rose 4" tags="Rose" position="1300,200" size="100,100">//...find the Ouija Board...//
 
 //...use the planchette to uncover its secret...//
 
@@ -1938,7 +1947,7 @@ Enter the password.
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $pinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="End" tags="" position="675,450" size="100,100">You&#39;ve allowed the spirits to
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="End" tags="General" position="675,450" size="100,100">You&#39;ve allowed the spirits to
 &lt;h2&gt;RAVE IN PEACE&lt;/h2&gt;</tw-passagedata><tw-passagedata pid="21" name="Answer Keys" tags="" position="750,650" size="100,100">Oswald 1: pushing up daisies
 Oswald 2: possess
 Oswald 3: shade
@@ -1957,7 +1966,7 @@ Henrietta 4: charm
 Clyde 1: bit the dust
 Clyde 2: MINIGAME (N/A)
 Clyde 3: expel
-Clyde 4: visage</tw-passagedata><tw-passagedata pid="22" name="Restart" tags="" position="550,575" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
+Clyde 4: visage</tw-passagedata><tw-passagedata pid="22" name="Restart" tags="General" position="550,575" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
 &lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
 &lt;&lt;goto &quot;Opening&quot;&gt;&gt;
 &lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Save state code" tags="" position="425,525" size="100,100">/*&lt;&lt;script&gt;&gt;if (Save.browser.size &gt; 0) {
@@ -1970,7 +1979,7 @@ Clyde 4: visage</tw-passagedata><tw-passagedata pid="22" name="Restart" tags="" 
 }
 else {
     /* No browser saves exist. */
-}&lt;&lt;/script&gt;&gt;*/</tw-passagedata><tw-passagedata pid="24" name="Oswald 2" tags="WaG" position="1050,50" size="100,100">&lt;html lang=&quot;en&quot;&gt;
+}&lt;&lt;/script&gt;&gt;*/</tw-passagedata><tw-passagedata pid="24" name="Oswald 2" tags="WaG Oswald" position="1050,50" size="100,100">&lt;html lang=&quot;en&quot;&gt;
 &lt;style&gt;
 body{
   		-webkit-tap-highlight-color: rgba(0,0,0,0);
