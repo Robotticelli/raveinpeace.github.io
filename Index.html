@@ -215,201 +215,6 @@ h3 {
   animation: gradient-animation 21s linear infinite;*/
 }
 
-/*Clyde 2 - Simon Says*/
-
-
-.toggle {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.button {
-  border-radius: 50% !important;
-  font-size: 1em;
-  background-color: lightgray;
-}
-
-#switches {
-  position: absolute;
-  font-family: 'Original Surfer', cursive;
-  margin-left: 26px;
-  margin-top: 110px;
-}
-
-.text2 {
-  position: absolute;
-  font-family: 'Original Surfer', cursive;
-  margin-left: 83px;
-  margin-top: 197px;
-}
-
-.text1 {
-  position: absolute;
-  font-family: 'Original Surfer', cursive;
-  margin-left: 19px;
-  margin-top: 142px;
-}
-
-.text1 span:last-child {
-  padding-left: 70px;
-}
-
-#title-NAME {
-  font-family: 'Original Surfer', cursive;
-  position: absolute;
-  font-size: 40px;
-  margin-left: 35px;
-  margin-top: 40px;
-}
-
-#turn {
-  position: absolute;
-  background: #330000;
-  color: red;
-  font-family: courier;
-  font-size: 20px;
-  height: 30px;
-  width: 50px;
-  margin-left: 90px;
-  margin-top: 170px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 30px;
-}
-
-#outer-circle {
-  background: #385a94;
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  border-style: solid;
-  border-width: 10px;
-  margin: auto;
-  margin-top: 60px;
-  box-shadow: 8px 8px 15px 5px #888888;
-}
-
-#topleft {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 250px 0 0 0;
-  -moz-border-radius: 250px 0 0 0;
-  -webkit-border-radius: 250px 0 0 0;
-  background: darkgreen;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0px 0px -250px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#topright {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 250px 0 0;
-  -moz-border-radius: 0 250px 0 0;
-  -webkit-border-radius: 0 250px 0 0;
-  background: darkred;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0px 0px 0px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#bottomleft {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 0 0 250px;
-  -moz-border-radius: 0 0 0 250px;
-  -webkit-border-radius: 0 0 0 250px;
-  background: goldenrod;
-  top: 50%;
-  left: 50%;
-  margin: 0px -250px 0px -250px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#bottomright {
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  border-radius: 0 0 250px 0;
-  -moz-border-radius: 0 0 250px 0;
-  -webkit-border-radius: 0 0 250px 0;
-  background: darkblue;
-  top: 50%;
-  left: 50%;
-  margin: 0px 0px -250px 0px;
-  border-style: solid;
-  border-width: 5px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#inner-circle {
-  position: absolute;
-  background: grey;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  border-style: solid;
-  border-width: 10px;
-  top: 50%;
-  left: 50%;
-  margin: -125px 0px 0px -125px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-Oswald 2 - Dark Presence
-/*
-#DPprogress-bar-container {
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(270deg,darkviolet,#56107e,#421e61,#7605d4);
-  background-size: 240% 240%;
-  animation: gradient-animation 16s ease infinite;
-    /*background-color: #6f2da8;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-#DPprogress-bar {
-    height: 100%;
-    background-color: #76d8f1;
-    width: 0%;
-} */
-
 body.WaG {
         margin: 0;
         font-family: sans-serif;
@@ -632,7 +437,122 @@ body.WaG {
       box-shadow: 0 0 0 5px goldenrod, 0 0 0 10px gold;
       background: black;
       overflow: hidden;
-    }</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.simonWinner = function (){
+    }
+
+/*Simon Says Styles*/
+      body.SMN {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        font-family: sans-serif;
+        color: #fff;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+	#SMNGameCanvas {
+      margin:0 auto;
+      position: relative;
+      place-items: center;
+      justify-content: center;
+      align-content: center;  
+      width: 60vw;
+      height: 100vh;
+      box-shadow: 0 0 0 5px goldenrod, 0 0 0 10px gold;
+      background: black;
+      overflow: hidden;
+      display: block;
+      padding: 1em;
+      
+    }
+
+      #SMNscore {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      #SMNboard {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(2, 1fr);
+       gap: 15px;
+       width: 40vw;
+       height: 25vh;
+      }
+
+      .SMNbtn {
+        border-radius: 20px;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.2s, transform 0.1s;
+        touch-action: manipulation;
+      }
+
+      .SMNbtn:active {
+        transform: scale(0.95);
+      }
+
+      #SMNgreen {
+        background: #00a74a;
+      }
+      #SMNred {
+        background: #9f0f17;
+      }
+      #SMNyellow {
+        background: #cca707;
+      }
+      #SMNblue {
+        background: #094a8f;
+      }
+
+      .SMNactive {
+        opacity: 1 !important;
+        box-shadow: 0 0 20px white;
+      }
+
+      #SMNstartBtn {
+        margin-top: 25px;
+        padding: 12px 30px;
+        border: none;
+        background: #fff;
+        color: #111;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      #SMNgameOverMsg,
+      #SMNwinMsg {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        opacity: 0;
+        transition: opacity 0.5s;
+        text-align: center;
+      }
+
+      #SMNgameOverMsg.SMNshow {
+        color: #ff4c4c;
+        opacity: 1;
+      }
+
+      #SMNwinMsg.SMNshow {
+        color: #00ff88;
+        opacity: 1;
+      }
+
+      @media (max-width: 500px) {
+        #SMNboard {
+          gap: 10px;
+        }
+        .SMNbtn {
+          border-radius: 15px;
+        }
+      }</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.simonWinner = function (){
   Engine.play("Clyde 3");
 };
 
@@ -654,7 +574,7 @@ document.ondblclick = function (e) {
     e.preventDefault();
 }
 
-</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-tag name="Oswald" color="blue"></tw-tag><tw-tag name="Rose" color="purple"></tw-tag><tw-tag name="Henrietta" color="red"></tw-tag><tw-tag name="Clyde" color="orange"></tw-tag><tw-tag name="General" color="green"></tw-tag><tw-tag name="general" color="green"></tw-tag><tw-tag name="oswald" color="blue"></tw-tag><tw-passagedata pid="1" name="0.1" tags="General" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
+</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-tag name="Oswald" color="blue"></tw-tag><tw-tag name="Rose" color="purple"></tw-tag><tw-tag name="Henrietta" color="red"></tw-tag><tw-tag name="Clyde" color="orange"></tw-tag><tw-tag name="General" color="green"></tw-tag><tw-tag name="general" color="green"></tw-tag><tw-tag name="oswald" color="blue"></tw-tag><tw-tag name="SMN" color="orange"></tw-tag><tw-passagedata pid="1" name="0.1" tags="General" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;do&gt;&gt;
 		&lt;&lt;if $inky_done&gt;&gt;
 		&lt;h3&gt;Oswald&#39;s Spirit has been calmed.&lt;/h3&gt;
@@ -878,303 +798,152 @@ Press the start button to keep the ghosts at bay!
 &lt;&lt;button &quot;START&quot;&gt;&gt;&lt;&lt;run startGame()&gt;&gt;&lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Clyde 2" tags="Clyde" position="1050,500" size="100,100">(check the power box and press start)
-
-&lt;html&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;Simon Game&lt;/title&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-
- &lt;link href=&#39;https://fonts.googleapis.com/css?family=Original+Surfer&amp;effect=emboss&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt;
-
-  &lt;audio id=&quot;clip1&quot;&gt;
-  	&lt;source src=&quot;https://s3.amazonaws.com/freecodecamp/simonSound1.mp3&quot;&gt;&lt;/source&gt;
-  &lt;/audio&gt;
-  &lt;audio id=&quot;clip2&quot;&gt;
-  	&lt;source src=&quot;https://s3.amazonaws.com/freecodecamp/simonSound2.mp3&quot;&gt;&lt;/source&gt;
-  &lt;/audio&gt;
-  &lt;audio id=&quot;clip3&quot;&gt;
-  	&lt;source src=&quot;https://s3.amazonaws.com/freecodecamp/simonSound3.mp3&quot;&gt;&lt;/source&gt;
-  &lt;/audio&gt;
-  &lt;audio id=&quot;clip4&quot;&gt;
-  	&lt;source src=&quot;https://s3.amazonaws.com/freecodecamp/simonSound4.mp3&quot;&gt;&lt;/source&gt;
-  &lt;/audio&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-  &lt;div id=&quot;outer-circle&quot;&gt;
-    &lt;div id=&quot;topleft&quot;&gt;&lt;/div&gt;
-    &lt;div id=&quot;topright&quot;&gt;&lt;/div&gt;
-    &lt;div id=&quot;bottomleft&quot;&gt;&lt;/div&gt;
-    &lt;div id=&quot;bottomright&quot;&gt;&lt;/div&gt;
-    &lt;div id=&quot;inner-circle&quot;&gt;
-      &lt;div id=&quot;title-NAME&quot; class=&quot;font-effect-emboss&quot;&gt;SIMON!&lt;/div&gt;
-      &lt;div id=&quot;switches&quot;&gt;
-       &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot; id=&quot;on&quot;&gt;
-        &lt;button class=&quot;button&quot; id=&quot;start&quot;&gt;Start&lt;/button&gt;
-        &lt;input type=&quot;checkbox&quot; class=&quot;toggle&quot; id=&quot;strict&quot;&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;text1&quot;&gt;
-        &lt;span&gt;POWER&lt;/span&gt;&lt;span&gt;STRICT&lt;/span&gt;
-      &lt;/div&gt;
-     &lt;div id=&quot;turn&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;text2&quot;&gt;
-        COUNT
-      &lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Clyde 2" tags="Clyde SMN" position="1050,500" size="100,100">&lt;tw-raw&gt;
+&lt;body&gt;&lt;div id=&quot;SMNGameCanvas&quot;&gt;
+    	&lt;h2&gt;SMN Game&lt;/h2&gt;
+    	&lt;div id=&quot;SMNscore&quot;&gt;Round: 0&lt;/div&gt;
+    	&lt;div id=&quot;SMNboard&quot;&gt;&lt;div id=&quot;SMNgreen&quot; class=&quot;SMNbtn&quot;&gt;&lt;/div&gt;&lt;div id=&quot;SMNred&quot; class=&quot;SMNbtn&quot;&gt;&lt;/div&gt;&lt;div id=&quot;SMNyellow&quot; class=&quot;SMNbtn&quot;&gt;&lt;/div&gt;&lt;div id=&quot;SMNblue&quot; class=&quot;SMNbtn&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+    	&lt;button id=&quot;SMNstartBtn&quot;&gt;Start Game&lt;/button&gt;
+    	&lt;div id=&quot;SMNgameOverMsg&quot;&gt;Game Over!&lt;/div&gt;
+    	&lt;div id=&quot;SMNwinMsg&quot;&gt;You Win!&lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;script&gt;
+      const SMNbuttons = {
+        SMNgreen: document.getElementById(&quot;SMNgreen&quot;),
+        SMNred: document.getElementById(&quot;SMNred&quot;),
+        SMNyellow: document.getElementById(&quot;SMNyellow&quot;),
+        SMNblue: document.getElementById(&quot;SMNblue&quot;),
+      };
 
+      const SMNsounds = {
+        SMNgreen: new Audio(
+          &quot;https://s3.amazonaws.com/freecodecamp/simonSound1.mp3&quot;
+        ),
+        SMNred: new Audio(
+          &quot;https://s3.amazonaws.com/freecodecamp/simonSound2.mp3&quot;
+        ),
+        SMNyellow: new Audio(
+          &quot;https://s3.amazonaws.com/freecodecamp/simonSound3.mp3&quot;
+        ),
+        SMNblue: new Audio(
+          &quot;https://s3.amazonaws.com/freecodecamp/simonSound4.mp3&quot;
+        ),
+      };
 
+      let SMNsequence = [];
+      let SMNplayerSequence = [];
+      let SMNround = 0;
+      let SMNgameActive = false;
+      let SMNinputAllowed = false; // 🚫 NEW: Prevents tapping during playback
 
-&lt;/body&gt;
-&lt;/html&gt;
-&lt;&lt;done&gt;&gt;
+      const SMNstartBtn = document.getElementById(&quot;SMNstartBtn&quot;);
+      const SMNscoreDisplay = document.getElementById(&quot;SMNscore&quot;);
+      const SMNgameOverMsg = document.getElementById(&quot;SMNgameOverMsg&quot;);
+      const SMNwinMsg = document.getElementById(&quot;SMNwinMsg&quot;);
 
-&lt;&lt;script&gt;&gt;
-let order = []; //keep track of order of flashing lights
-let playerOrder = []; //keep track of player light presses
-let flash; //number of flashes appearing in the game
-let turn; //keep track of what turn we are on
-let good; //TRUE or FALSE dependant on how player is doing in the game
-let compTurn; //TRUE or FALSE is it the computers turn
-let intervalId;
-let strict = false; //has STRICT been checked?
-let noise = true; //Sound
-let on = false; // allow start button to begin game
-let win;
+      SMNstartBtn.addEventListener(&quot;click&quot;, SMNstartGame);
 
-var audio1 = document.getElementById(&quot;clip1&quot;);
-var audio2 = document.getElementById(&quot;clip2&quot;);
-var audio3 = document.getElementById(&quot;clip3&quot;);
-var audio4 = document.getElementById(&quot;clip4&quot;);
+      function SMNstartGame() {
+        SMNgameActive = true;
+        SMNsequence = [];
+        SMNplayerSequence = [];
+        SMNround = 0;
+        SMNgameOverMsg.classList.remove(&quot;SMNshow&quot;);
+        SMNwinMsg.classList.remove(&quot;SMNshow&quot;);
+        SMNstartBtn.textContent = &quot;Restart Game&quot;;
+        SMNnextRound(true);
+      }
 
-//the following consts allow Javascript to reference HTML Ids
-const turnCounter = document.querySelector(&quot;#turn&quot;);
-const topLeft = document.querySelector(&quot;#topleft&quot;);
-const topRight = document.querySelector(&quot;#topright&quot;);
-const bottomLeft = document.querySelector(&quot;#bottomleft&quot;);
-const bottomRight = document.querySelector(&quot;#bottomright&quot;);
-const strictButton = document.querySelector(&quot;#strict&quot;);
-const onButton = document.querySelector(&quot;#on&quot;);
-const startButton = document.querySelector(&quot;#start&quot;);
+      function SMNnextRound(SMNisFirstRound = false) {
+        if (!SMNgameActive) return;
 
+        SMNround++;
+        SMNscoreDisplay.textContent = &quot;Round: &quot; + SMNround;
+        SMNplayerSequence = [];
 
-strictButton.addEventListener(&#39;click&#39;,(event)=&gt; {
-    if(strictButton.checked == true){
-        strict = true;
-    } else{
-        strict = false;
-    }
-});
-
-    onButton.addEventListener(&#39;click&#39;,(event) =&gt; {
-    if (onButton.checked == true) {
-        on = true;
-        turnCounter.innerHTML = &quot;-&quot;; //places a &quot;-&quot; into the turn counter element when power is on
-    } else {
-        on = false;
-        turnCounter.innerHTML = &quot;&quot;;
-        clearColor();
-        clearInterval(intervalId);
-    }
-});
-
-startButton.addEventListener(&#39;click&#39;,(event) =&gt; {
-    if (on || win) {
-        playGame();
-    }
-});
-
-function playGame() {
-    win = false;
-    order = [];
-    playerOrder = [];
-    flash = 0;
-    intervalId = 0;
-    turn = 3;
-    //turnCounter.innerHTML = 0;
-    good = true;
-    for (var i = 0; i &lt; 20; i++){
-        order.push(Math.floor(Math.random() * 4) + 1);
-    }
-    compTurn = true;
-
-    intervalId = setInterval(gameTurn, 800);
-}
-
-function gameTurn(){
-    on = false; //prevents players from clicking buttons
-    if (flash == turn) {
-        clearInterval(intervalId);
-        compTurn = false;
-        clearColor();
-        on = true;
-    }
-
-    if (compTurn) {
-        clearColor();
-        setTimeout(() =&gt; {
-            if (order[flash] == 1) one();
-            if (order[flash] == 2) two();
-            if (order[flash] == 3) three();
-            if (order[flash] == 4) four();
-            flash++;
-        }, 200);
-    }
-}
-
-function one() {
-    if (noise) {
-        audio1.play();
-    }
-    noise = true;
-    topLeft.style.backgroundColor = &quot;lightgreen&quot;;
-}
-
-function two() {
-    if (noise) {
-        audio2.play();
-    }
-    noise = true;
-    topRight.style.backgroundColor = &quot;tomato&quot;;
-}
-
-function three() {
-    if (noise) {
-        audio3.play();
-    }
-    noise = true;
-    bottomLeft.style.backgroundColor = &quot;yellow&quot;;
-}
-
-function four() {
-    if (noise) {
-        audio4.play();
-    }
-    noise = true;
-    bottomRight.style.backgroundColor = &quot;lightskyblue&quot;;
-}
-
-function clearColor() {
-    topLeft.style.backgroundColor = &quot;darkgreen&quot;;
-    topRight.style.backgroundColor = &quot;darkred&quot;;
-    bottomLeft.style.backgroundColor = &quot;goldenrod&quot;;
-    bottomRight.style.backgroundColor = &quot;darkblue&quot;;
-}
-
-function flashColor() {
-    topLeft.style.backgroundColor = &quot;lightgreen&quot;;
-    topRight.style.backgroundColor = &quot;tomato&quot;;
-    bottomLeft.style.backgroundColor = &quot;yellow&quot;;
-    bottomRight.style.backgroundColor = &quot;lightskyblue&quot;;
-}
-
-topLeft.addEventListener(&#39;click&#39;, (event) =&gt;{
-    if (on) {
-        playerOrder.push(1);
-        check();
-        one();
-        if (!win) {
-            setTimeout(() =&gt; {
-                clearColor();
-            }, 300);
+        if (SMNround &gt; 4) {
+          SMNwinGame();
+          return;
+          
         }
-    }
-})
 
-topRight.addEventListener(&#39;click&#39;, (event) =&gt;{
-    if (on) {
-        playerOrder.push(2);
-        check();
-        two();
-        if (!win) {
-            setTimeout(() =&gt; {
-                clearColor();
-            }, 300);
+        const SMNcolors = Object.keys(SMNbuttons);
+        const SMNsequenceLength = SMNisFirstRound ? 3 : 3 + (SMNround - 1);
+
+        SMNsequence = [];
+        for (let i = 0; i &lt; SMNsequenceLength; i++) {
+          const SMNrandomColor = SMNcolors[Math.floor(Math.random() * 4)];
+          SMNsequence.push(SMNrandomColor);
         }
-    }
-})
 
-bottomLeft.addEventListener(&#39;click&#39;, (event) =&gt;{
-    if (on) {
-        playerOrder.push(3);
-        check();
-        three();
-        if (!win) {
-            setTimeout(() =&gt; {
-                clearColor();
-            }, 300);
-        }
-    }
-})
+        SMNplaySequence();
+      }
 
-bottomRight.addEventListener(&#39;click&#39;, (event) =&gt;{
-    if (on) {
-        playerOrder.push(4);
-        check();
-        four();
-        if (!win) {
-            setTimeout(() =&gt; {
-                clearColor();
-            }, 300);
-        }
-    }
-})
+      function SMNplaySequence() {
+        SMNinputAllowed = false; // 🚫 disable input while sequence plays
+        let SMNdelay = 800;
 
-function check() {
-    if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
-        good = false;
-
-    if (playerOrder.length == 6 &amp;&amp; good){
-        winGame();
-    }
-    
-    if (good == false) {
-        flashColor();
-        turnCounter.innerHTML = &quot;NO!&quot;;
-        setTimeout(() =&gt; {
-            turnCounter.innerHTML = turn;
-            clearColor();
-
-            if (strict) {
-                playGame();
-            } else {
-                compTurn = true;
-                flash = 0;
-                playerOrder = [];
-                good = true;
-                intervalId = setInterval(gameTurn, 800);
+        SMNsequence.forEach((SMNcolor, SMNindex) =&gt; {
+          setTimeout(() =&gt; {
+            SMNflashButton(SMNcolor);
+            if (SMNindex === SMNsequence.length - 1) {
+              setTimeout(() =&gt; {
+                SMNinputAllowed = true; // ✅ re-enable input
+              }, SMNdelay);
             }
-        }, 800);
+          }, SMNdelay * (SMNindex + 1));
+        });
+      }
 
-        noise = false;
-    }
+      function SMNflashButton(SMNcolor) {
+        SMNbuttons[SMNcolor].classList.add(&quot;SMNactive&quot;);
+        SMNsounds[SMNcolor].play();
+        setTimeout(() =&gt; {
+          SMNbuttons[SMNcolor].classList.remove(&quot;SMNactive&quot;);
+        }, 400);
+      }
 
-    if (turn == playerOrder.length &amp;&amp; good &amp;&amp; !win) {
-        turn++;
-        playerOrder = [];
-        compTurn = true;
-        flash = 0;
-        turnCounter.innerHTML = turn;
-        intervalId = setInterval(gameTurn, 800);
-    }
+      Object.keys(SMNbuttons).forEach((SMNcolor) =&gt; {
+        SMNbuttons[SMNcolor].addEventListener(&quot;click&quot;, () =&gt;
+          SMNhandlePlayerClick(SMNcolor)
+        );
+      });
 
+      function SMNhandlePlayerClick(SMNcolor) {
+        if (!SMNgameActive || !SMNinputAllowed) return; // 🚫 ignore taps until sequence done
+        SMNplayerSequence.push(SMNcolor);
+        SMNflashButton(SMNcolor);
 
-}
+        const SMNcurrentStep = SMNplayerSequence.length - 1;
+        if (SMNplayerSequence[SMNcurrentStep] !== SMNsequence[SMNcurrentStep]) {
+          SMNendGame();
+          return;
+        }
 
-function winGame(){
-    flashColor();
-    turnCounter.innerHTML = &quot;WIN!&quot;;
-    on = false;
-    win = true;
-    window.simonWinner();
-}
-&lt;&lt;/script&gt;&gt;
-&lt;&lt;/done&gt;&gt;
+        if (SMNplayerSequence.length === SMNsequence.length) {
+          setTimeout(() =&gt; SMNnextRound(false), 1000);
+        }
+      }
 
+      function SMNendGame() {
+        SMNgameActive = false;
+        SMNgameOverMsg.classList.add(&quot;SMNshow&quot;);
+        SMNscoreDisplay.textContent = &quot;Round: 0&quot;;
+        SMNsequence = [];
+        SMNplayerSequence = [];
+      }
+
+      function SMNwinGame() {
+        SMNgameActive = false;
+        SMNwinMsg.classList.add(&quot;SMNshow&quot;);
+        window.winner(&quot;Clyde 3&quot;);
+        SMNscoreDisplay.textContent = &quot;You Win!&quot;;
+        SMNsequence = [];
+        SMNplayerSequence = [];
+      }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/tw-raw&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">//...Seek the following symbol...//
 &lt;p style=&quot;font-size:360%;&quot;&gt;💪&lt;/p&gt;
 
