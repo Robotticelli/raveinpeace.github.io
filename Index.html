@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Rave In Peace Merged" startnode="10" creator="Twine" creator-version="2.9.2" format="SugarCube" format-version="2.37.3" ifid="705DFB0D-D989-4DFE-B562-45B03842E479" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+	<tw-storydata name="Rave In Peace Merged" startnode="9" creator="Twine" creator-version="2.9.2" format="SugarCube" format-version="2.37.3" ifid="705DFB0D-D989-4DFE-B562-45B03842E479" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 @font-face {
   font-family: 'Indira';
@@ -129,7 +129,7 @@ body.general {
     background-image: url("images/light-grey-white.png");
     background-repeat: repeat;
   	background-blend-mode: normal;
-  	background-color: #1A0F03;
+  	background-color: #404040;
   	
 }
 
@@ -137,7 +137,7 @@ body.oswald {
   background-image: url("images/light-grey-black.png");
     background-repeat: repeat;
   	background-blend-mode: normal;
-  	background-color: #01DDE1;
+  	background-color: #009698;
   	
 }
 
@@ -145,7 +145,7 @@ body.rose {
    background-image: url("images/light-grey-black.png");
     background-repeat: repeat;
   	background-blend-mode: normal;
-  	background-color: #FDB3B0;
+  	background-color: #D29895;
   	
 }
 
@@ -153,7 +153,7 @@ body.henrietta {
    background-image: url("images/light-grey-black.png");
     background-repeat: repeat;
   	background-blend-mode: normal;
-  	background-color: #FA2402;
+  	background-color: #9B1904;
   	
 }
 
@@ -161,7 +161,7 @@ body.clyde {
    background-image: url("images/light-grey-black.png");
     background-repeat: repeat;
   	background-blend-mode: normal;
-  	background-color: #F8A201;
+  	background-color: #AD7100;
   	
 }
 
@@ -173,6 +173,7 @@ h1 {
 h2 {
   	font-family: 'Indira';
     font-size: 2.5rem;
+  	margin:0;
 }
 
 .h2-like{
@@ -188,32 +189,35 @@ h3 {
 .passage {
   	font-size: 1.2rem;
    	font-family: 'Crimson Text', serif;
-   	font-weight:400;
- 	text-align: Center; 
+   	font-weight: 600;
+ 	text-align: Center;
 }
 
 .inputAnswer input[type="text"]{
  	max-width: 12em;
   	min-width: 12em;
+  	background-color: #404040;
+  	font-family: 'Crimson Text', serif;
+  	font-weight: 600;
+  	margin:0;
 }
 
 .passage button {
-  border: 4px solid #989898;
   color: lightgrey;
-  padding: 10px 20px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 1.5px 1px;
+  margin: 0.5em;
   cursor: pointer;
-  border-radius: 13px;
-  background-color: #444444;
-  /*background: linear-gradient(80deg, #07aeaf, #c10405, #9c7134, #ec9cec);
-  background-size: 1500% 400%;
-  animation: gradient-animation 21s linear infinite;*/
+  border-color:#352C25;
+  background-color: #352C25;
+  box-shadow: 0 0 0 3px #5D4D40, 0 0 0 6px #967F6C;
 }
+
+/*Whack a Ghost Game*/
 
 body.WaG {
         margin: 0;
@@ -231,7 +235,7 @@ body.WaG {
       margin:0 auto;
       padding: 20px;
       position: relative;
-      width: 80%;
+      width: 90%;
       height: 80%;
       box-shadow: 0 0 0 5px goldenrod, 0 0 0 10px gold;
       background: black;
@@ -239,11 +243,11 @@ body.WaG {
     }
 
       #WaGProgressContainer {
-        width: 90%;
+        width: 80%;
         height: 20px;
         background: #ddd;
         border-radius: 10px;
-        margin: 20px auto;
+        margin: 10px auto;
         overflow: visible;
       }
 
@@ -264,7 +268,7 @@ body.WaG {
       #WaGGame {
         display: grid;
         grid-template-columns: repeat(3, 80px);
-        grid-gap: 20px;
+        grid-gap: 15px;
         justify-content: center;
         margin-top: 10px;
       }
@@ -325,6 +329,7 @@ body.WaG {
         padding: 10px 20px;
         font-size: 1em;
         border: none;
+        box-shadow: none;
         border-radius: 8px;
         background: #4caf50;
         color: white;
@@ -432,7 +437,7 @@ body.WaG {
   #ARContainer {
       margin:0 auto;
       position: relative;
-      width: 90%;
+      width: 100%;
       height: 300px;
       box-shadow: 0 0 0 5px goldenrod, 0 0 0 10px gold;
       background: black;
@@ -519,6 +524,7 @@ body.WaG {
         padding: 12px 30px;
         border: none;
         background: #fff;
+        box-shadow: none;
         color: #111;
         font-weight: bold;
         border-radius: 10px;
@@ -552,7 +558,9 @@ body.WaG {
         .SMNbtn {
           border-radius: 15px;
         }
-      }</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.simonWinner = function (){
+      }
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.simonWinner = function (){
   Engine.play("Clyde 3");
 };
 
@@ -572,9 +580,7 @@ Config.saves.autoload = true;
 
 document.ondblclick = function (e) {
     e.preventDefault();
-}
-
-</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-tag name="Oswald" color="blue"></tw-tag><tw-tag name="Rose" color="purple"></tw-tag><tw-tag name="Henrietta" color="red"></tw-tag><tw-tag name="Clyde" color="orange"></tw-tag><tw-tag name="General" color="green"></tw-tag><tw-tag name="general" color="green"></tw-tag><tw-tag name="oswald" color="blue"></tw-tag><tw-tag name="SMN" color="orange"></tw-tag><tw-passagedata pid="1" name="0.1" tags="General" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
+}</script><tw-tag name="WaG" color="purple"></tw-tag><tw-tag name="BH" color="red"></tw-tag><tw-tag name="Oswald" color="blue"></tw-tag><tw-tag name="Rose" color="purple"></tw-tag><tw-tag name="Henrietta" color="red"></tw-tag><tw-tag name="Clyde" color="orange"></tw-tag><tw-tag name="General" color="green"></tw-tag><tw-tag name="general" color="green"></tw-tag><tw-tag name="oswald" color="blue"></tw-tag><tw-tag name="SMN" color="orange"></tw-tag><tw-tag name="BB" color="purple"></tw-tag><tw-passagedata pid="1" name="0.1" tags="General" position="675,300" size="100,100">&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;do&gt;&gt;
 		&lt;&lt;if $inky_done&gt;&gt;
 		&lt;h3&gt;Oswald&#39;s Spirit has been calmed.&lt;/h3&gt;
@@ -614,15 +620,14 @@ document.ondblclick = function (e) {
 &lt;&lt;button [[END |End]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;button [[Reset Data |Restart]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="Oswald" position="925,50" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+&lt;&lt;button [[Reset Data |Restart]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Oswald 1" tags="Oswald" position="925,50" size="100,100">&lt;h2&gt;//...Find my gravestone.//&lt;/h2&gt;
 
-&lt;img src=&quot;inky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
+&lt;img src=&quot;inky_grave_puzzle.png&quot; width=&quot;70%&quot; height=&quot;auto&quot;&gt;
 
-Please input a Password to continue. 
-/*(The correct password is &quot;pushing up daisies&quot;.)*/
+How did they pass? 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;Incorrect!&quot;);&lt;&lt;/script&gt;&gt;
@@ -649,13 +654,13 @@ Please input a Password to continue.
 &lt;&lt;/button&gt;&gt;
 
 
-
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="Clyde" position="925,500" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Clyde 1" tags="Clyde" position="925,500" size="100,100">&lt;h2&gt;//...Find my gravestone.//&lt;/h2&gt;
 
-&lt;img src=&quot;clyde_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
+&lt;img src=&quot;clyde_grave_puzzle.png&quot; width=&quot;70%&quot; height=&quot;auto&quot;&gt;
 
-Please input a Password to continue. /*(The correct password is &quot;bit the dust&quot;.)*/
+How did they pass?
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
 &lt;&lt;button &quot;Submit&quot;&gt;&gt;
@@ -683,122 +688,9 @@ Please input a Password to continue. /*(The correct password is &quot;bit the du
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="4" name="Oswald 2 OLD" tags="" position="1050,675" size="100,100">&lt;html&gt; &lt;div id=&quot;DPgame-container&quot;&gt;
-        &lt;h1&gt;Dark Pressence&lt;/h1&gt;
-        &lt;br&gt;Don&#39;t let the evil spirits take over!
-        
-        &lt;div id=&quot;DPprogress-bar-container&quot;&gt;
-            &lt;div id=&quot;DPprogress-bar&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;button id=&quot;DPclick-button&quot;&gt;Repel the evil spirit!&lt;/button&gt;
-  
-        &lt;p id=&quot;DPgame-status&quot;&gt;Progress: 0%&lt;/p&gt;
-        &lt;p id=&quot;DPgame-time&quot;&gt;&lt;span id=&quot;DPtimer&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-        &lt;div id=&quot;DPlinkContainer&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;script&gt;
-// Initialize the game variables
-let DPprogress = 0;  // Track the current DPprogress (0 to 100)
-let DPdecayRate = 3.5;  // Rate at which the DPprogress decays per second
-let DPgameDuration = 30;  // Total game time in seconds
-let DPtimerInterval;
-let DPdecayInterval;
-let DPgameOver = false;
-
-const DPprogressBar = document.getElementById(&#39;DPprogress-bar&#39;);
-const DPclickButton = document.getElementById(&#39;DPclick-button&#39;);
-const DPgameStatus = document.getElementById(&#39;DPgame-status&#39;);
-const DPgameTime = document.getElementById(&#39;DPgame-time&#39;);
-const DPtimerDisplay = document.getElementById(&#39;DPtimer&#39;);
-const DPlinkContainer = document.createElement(&#39;div&#39;);
-DPclickButton.disabled = true;
-
-// Function to start the game
-function startGame() {
-    DPprogress = 0;
-    DPgameOver = false;
-    DPgameDuration = 30;
-    DPtimerDisplay.textContent = DPgameDuration;
-
-    DPclickButton.disabled = false;
-    DPclickButton.textContent = &quot;Tap Me!&quot;;
-    DPprogressBar.style.width = DPprogress + &quot;%&quot;;
-    DPgameStatus.textContent = `Progress: ${DPprogress}%`;
-
-DPlinkContainer.textContent = &quot;&quot;;
-
-    // Start the countdown DPtimer
-    DPtimerInterval = setInterval(() =&gt; {
-        DPgameDuration--;
-        DPtimerDisplay.textContent = DPgameDuration;
-        if (DPgameDuration &lt;= 0) {
-            endGame(false);  // Game over due to time limit
-        }
-    }, 1000);
-
-    // Start the decay effect
-    DPdecayInterval = setInterval(() =&gt; {
-        if (DPprogress &gt; 0 &amp;&amp; !DPgameOver) {
-            DPprogress -= DPdecayRate;
-            if (DPprogress &lt; 0) DPprogress = 0;
-            DPprogressBar.style.width = DPprogress + &quot;%&quot;;
-            DPgameStatus.textContent = `Progress: ${Math.round(DPprogress)}%`;
-        }
-    }, 250);
-}
-
-// Handle the button click event
-DPclickButton.addEventListener(&#39;click&#39;, function() {
-    if (DPgameOver) return;
-
-    DPprogress += 5;  // Increase DPprogress by 10% per click
-    if (DPprogress &gt;= 100) {
-        DPprogress = 100;
-        endGame(true);  // Game over, you win!
-    }
-    DPprogressBar.style.width = DPprogress + &quot;%&quot;;
-    DPgameStatus.textContent = `Progress: ${Math.round(DPprogress)}%`;
-});
-
-// End the game with win or lose status
-function endGame(won) {
-    DPgameOver = true;
-    clearInterval(DPtimerInterval);
-    clearInterval(DPdecayInterval);
-
-    DPclickButton.disabled = true;
-    DPclickButton.textContent = won ? &quot;Complete&quot; : &quot;Complete&quot;;
-    if (!won) DPgameStatus.textContent = `Final Progress: 
-    ${Math.round(DPprogress)}%`;
-    
-    if (won) {
-        /*const winText = document.createElement(&#39;span&#39;);*/
-        window.winner(&quot;Oswald 3&quot;);
-        /*winText.innerText = &quot;POSSESS&quot;;*/
-       /* winText.style.fontFamily = &quot;Wild2&quot;;*/
-        /*winText.style.fontSize=&quot;2.5rem&quot;;*/
-        /*DPlinkContainer.appendChild(winText);*/
-    } else {
-        const loseText = document.createElement(&#39;span&#39;);
-        loseText.innerText=&quot;Try Again?&quot;;
-        loseText.style.fontFamily = &quot;Wild2&quot;;
-        loseText.style.fontSize=&quot;2.5rem&quot;;
-        DPlinkContainer.appendChild(loseText);
-    }
-
-    /*document.getElementById(&#39;DPgame-container&#39;).appendChild(DPlinkContainer);*/
-
-}
-
-&lt;/script&gt;&lt;/html&gt;
-Press the start button to keep the ghosts at bay!
-
-&lt;&lt;button &quot;START&quot;&gt;&gt;&lt;&lt;run startGame()&gt;&gt;&lt;&lt;/button&gt;&gt;
-
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Clyde 2" tags="Clyde SMN" position="1050,500" size="100,100">&lt;tw-raw&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Clyde 2" tags="Clyde SMN" position="1050,500" size="100,100">&lt;tw-raw&gt;
 &lt;&lt;nobr&gt;&gt;&lt;style&gt;
 body{
   		-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -950,8 +842,10 @@ body{
     &lt;/script&gt;
 &lt;/body&gt;
 &lt;/tw-raw&gt;
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">//...Seek the following symbol...//
-&lt;p style=&quot;font-size:360%;&quot;&gt;💪&lt;/p&gt;
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">&lt;h2&gt;//...Seek the following symbol...//&lt;/h2&gt;
+&lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;💪&lt;/p&gt;
+&lt;h2&gt;//...there the way shall open to you.//&lt;/h2&gt;
 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
@@ -980,8 +874,10 @@ body{
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Clyde 4" tags="Clyde" position="1300,500" size="100,100">//...Seek the following symbol...//
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 4" tags="Clyde" position="1300,500" size="100,100">&lt;h2&gt;//...Seek the following symbol...//&lt;/h2&gt;
 &lt;p style=&quot;font-size:360%;&quot;&gt;🪞&lt;/p&gt;
+&lt;h2&gt;//...there the way shall open to you.//&lt;/h2&gt;
 
 Look deeply inwards and &lt;strong&gt;B&lt;/strong&gt;urn the candles th&lt;strong&gt;R&lt;/strong&gt;ee.
 One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
@@ -1014,14 +910,14 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $clyde_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Oswald 3" tags="Oswald" position="1175,50" size="100,100">Use the lens to find 5 hidden figures among you.
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Oswald 3" tags="Oswald" position="1175,50" size="100,100">&lt;h2&gt;//...Use the lens to find 5 hidden figures among you.//&lt;/h2&gt;
 
  &lt;div id= ARContainer&gt;&lt;iframe src=&quot;https://rave-in-peace-ar-robotticelli.replit.app/&quot; height=&quot;300&quot; width=&quot;100%&quot; title=&quot;AR Scanner&quot; allow=&quot;camera https://rave-in-peace-ar-robotticelli.replit.app/; microphone https://rave-in-peace-ar-robotticelli.replit.app&quot;/&gt;&lt;/div&gt;
-
-
+The secret of the lens is: 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
 &lt;&lt;button &quot;Submit&quot;&gt;&gt;
@@ -1050,11 +946,13 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="9" name="Oswald 4" tags="Oswald" position="1300,50" size="100,100">... Seek the hand. Decipher it&#39;s message... 
+</tw-passagedata><tw-passagedata pid="8" name="Oswald 4" tags="Oswald" position="1300,50" size="100,100">&lt;h2&gt;//...Seek the hand. Decipher it&#39;s message.//&lt;/h2&gt; 
 
 &lt;img src=&quot;HandOfGlory.png&quot; width=&quot;80%&quot; height=&quot;auto&quot;&gt;
 
+The secret of the hand is:
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
 &lt;&lt;button &quot;Submit&quot;&gt;&gt;
@@ -1083,10 +981,11 @@ One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $inky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Opening" tags="General" position="500,325" size="100,100">&lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Opening" tags="General" position="500,325" size="100,100">&lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
 
 &lt;h2&gt;Prove your worth.&lt;/h2&gt;
 
@@ -1096,16 +995,14 @@ There are 4 ghosts in your vicinity that need to finally be put to rest.
 are you ready?
 
 &lt;&lt;button[[ YES |0.1]]&gt;&gt; &lt;&lt;/button &gt;&gt;
-</tw-passagedata><tw-passagedata pid="11" name="Rose 1" tags="Rose" position="925,200" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="10" name="Rose 1" tags="Rose" position="925,200" size="100,100">&lt;h2&gt;//...Find my gravestone.//&lt;/h2&gt;
 
-&lt;img src=&quot;pinky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
-
+&lt;img src=&quot;pinky_grave_puzzle.png&quot; width=&quot;70%&quot; height=&quot;auto&quot;&gt;
 &lt;&lt;set _answer to &quot;sleeping with the fishes&quot;&gt;&gt;
-
-Please input a password to continue.
+How did they pass?
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1130,16 +1027,17 @@ Please input a password to continue.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="Henrietta 1" tags="Henrietta" position="925,350" size="100,100">&lt;h2&gt;//...Find my gravestone...//&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Henrietta 1" tags="Henrietta" position="925,350" size="100,100">&lt;h2&gt;//...Find my gravestone.//&lt;/h2&gt;
 
-&lt;img src=&quot;blinky_grave_puzzle.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
+&lt;img src=&quot;blinky_grave_puzzle.png&quot; width=&quot;70%&quot; height=&quot;auto&quot;&gt;
 &lt;&lt;set _answer to &quot;kicked the bucket&quot;&gt;&gt;
 
-Please input a password to continue.
+How did they pass?
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1164,8 +1062,9 @@ Please input a password to continue.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Rose 2" tags="Rose" position="1050,200" size="100,100">&lt;head&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Rose 2" tags="Rose BB" position="1050,200" size="100,100">&lt;head&gt;
   &lt;style&gt;
     * { padding: 0; margin: 0; box-sizing: border-box; }
     body { background: #1a1a1a; }
@@ -1216,7 +1115,8 @@ Please input a password to continue.
     const brickOffsetTop = 60;
     const brickOffsetLeft = 30;
 
-    function initBricks() {
+    // Game functions
+    function BBinitBricks() {
       bricks = [];
       for (let r = 0; r &lt; brickRowCount; r++) {
         bricks[r] = [];
@@ -1230,7 +1130,7 @@ Please input a password to continue.
       }
     }
 
-    function drawBricks() {
+    function BBdrawBricks() {
       for (let r = 0; r &lt; brickRowCount; r++) {
         for (let c = 0; c &lt; brickColumnCount; c++) {
           const b = bricks[r][c];
@@ -1249,7 +1149,7 @@ Please input a password to continue.
       }
     }
 
-    function drawBall() {
+    function BBdrawBall() {
       ctx.beginPath();
       ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
       ctx.fillStyle = &quot;#FFFFFF&quot;;
@@ -1260,7 +1160,7 @@ Please input a password to continue.
       ctx.shadowBlur = 0;
     }
 
-    function drawPaddle() {
+    function BBdrawPaddle() {
       ctx.beginPath();
       ctx.rect(paddleX, canvas.height - paddleHeight - 10, paddleWidth, paddleHeight);
       ctx.fillStyle = &quot;#FFFFFF&quot;;
@@ -1268,7 +1168,7 @@ Please input a password to continue.
       ctx.closePath();
     }
 
-    function drawParticles() {
+    function BBdrawParticles() {
       for (let p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
@@ -1278,12 +1178,12 @@ Please input a password to continue.
       }
     }
 
-    function updateParticles() {
+    function BBupdateParticles() {
       particles.push({ x, y, alpha: 1 });
       if (particles.length &gt; 30) particles.shift();
     }
 
-    function drawLives() {
+    function BBdrawLives() {
       const radius = 8;
       const spacing = 20;
       const startX = canvas.width - 100;
@@ -1298,7 +1198,7 @@ Please input a password to continue.
       }
     }
 
-    function collisionDetection() {
+    function BBcollisionDetection() {
       for (let r = 0; r &lt; brickRowCount; r++) {
         for (let c = 0; c &lt; brickColumnCount; c++) {
           const b = bricks[r][c];
@@ -1306,7 +1206,7 @@ Please input a password to continue.
             if (x &gt; b.x &amp;&amp; x &lt; b.x + brickWidth &amp;&amp; y &gt; b.y &amp;&amp; y &lt; b.y + brickHeight) {
               dy = -dy;
               b.status = 0;
-              if (checkWin()) {
+              if (BBcheckWin()) {
                 window.winner(&quot;Rose 3&quot;);
               }
             }
@@ -1315,7 +1215,7 @@ Please input a password to continue.
       }
     }
 
-    function checkWin() {
+    function BBcheckWin() {
       for (let r of bricks) {
         for (let b of r) {
           if (b &amp;&amp; b.status === 1) return false;
@@ -1324,7 +1224,7 @@ Please input a password to continue.
       return true;
     }
 
-    function resetBall() {
+    function BBresetBall() {
       x = canvas.width / 2;
       y = canvas.height - 60;
       dx = 2;
@@ -1332,7 +1232,7 @@ Please input a password to continue.
       paddleX = (canvas.width - paddleWidth) / 2;
     }
 
-    function drawOverlay(title, button) {
+    function BBdrawOverlay(title, button) {
       ctx.fillStyle = &quot;rgba(0, 0, 0, 0.85)&quot;;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -1349,16 +1249,16 @@ Please input a password to continue.
       ctx.fillText(button, canvas.width / 2, canvas.height / 2 + 36);
     }
 
-    function draw() {
+    function BBdraw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      drawBricks();
-      drawParticles();
-      drawBall();
-      drawPaddle();
-      drawLives();
-      collisionDetection();
-      updateParticles();
+      BBdrawBricks();
+      BBdrawParticles();
+      BBdrawBall();
+      BBdrawPaddle();
+      BBdrawLives();
+      BBcollisionDetection();
+      BBupdateParticles();
 
       if (x + dx &gt; canvas.width - ballRadius || x + dx &lt; ballRadius) dx = -dx;
       if (y + dy &lt; ballRadius) dy = -dy;
@@ -1369,10 +1269,10 @@ Please input a password to continue.
           lives--;
           if (!lives) {
             gameOver = true;
-            drawOverlay(&quot;Game Over!&quot;, &quot;Play Again&quot;);
+            BBdrawOverlay(&quot;Game Over!&quot;, &quot;Play Again&quot;);
             return;
           } else {
-            resetBall();
+            BBresetBall();
           }
         }
       }
@@ -1380,47 +1280,52 @@ Please input a password to continue.
       x += dx;
       y += dy;
 
-      requestAnimationFrame(draw);
+      requestAnimationFrame(BBdraw);
     }
 
-    function startGame() {
+    function BBstartGame() {
       gameStarted = true;
       gameOver = false;
       lives = 3;
-      initBricks();
-      resetBall();
-      draw();
+      BBinitBricks();
+      BBresetBall();
+      BBdraw();
     }
 
-    // Input handlers
-    canvas.addEventListener(&quot;click&quot;, () =&gt; {
+    // Event handler functions
+    function BBhandleClick() {
       if (!gameStarted) {
-        startGame();
+        BBstartGame();
       } else if (gameOver) {
-       document.location.reload();
+        document.location.reload();
       }
-    });
+    }
 
-    canvas.addEventListener(&quot;touchstart&quot;, function (e) {
+    function BBhandleTouchStart(e) {
       const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
       paddleX = touchX - paddleWidth / 2;
-    });
+    }
 
-    canvas.addEventListener(&quot;touchmove&quot;, function (e) {
+    function BBhandleTouchMove(e) {
       const touchX = e.touches[0].clientX - canvas.getBoundingClientRect().left;
       paddleX = touchX - paddleWidth / 2;
       if (paddleX &lt; 0) paddleX = 0;
       if (paddleX + paddleWidth &gt; canvas.width) paddleX = canvas.width - paddleWidth;
       e.preventDefault();
-    });
+    }
+
+    // Attach event handlers
+    canvas.addEventListener(&quot;click&quot;, BBhandleClick);
+    canvas.addEventListener(&quot;touchstart&quot;, BBhandleTouchStart);
+    canvas.addEventListener(&quot;touchmove&quot;, BBhandleTouchMove);
 
     // Initial canvas render
-    drawOverlay(&quot;Destroy the ghost!&quot;, &quot;Start&quot;);
+    BBdrawOverlay(&quot;Destroy the ghost!&quot;, &quot;Start&quot;);
   &lt;/script&gt;
 &lt;/body&gt;
 
-
-[[Debug Next|Rose 3]]</tw-passagedata><tw-passagedata pid="14" name="Henrietta 2" tags="BH Henrietta" position="1050,350" size="100,100">&lt;body&gt;
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Henrietta 2" tags="BH Henrietta" position="1050,350" size="100,100">&lt;body&gt;
   &lt;div id=&quot;BHgameContainer&quot;&gt;
     &lt;div id=&quot;BHhud&quot;&gt;
       &lt;div id=&quot;BHlives&quot;&gt;Lives: 3&lt;/div&gt;
@@ -1457,6 +1362,8 @@ Please input a password to continue.
       BHlives: 3
     };
 
+    // track the request animation frame
+    let BHrafId = null;
     let BHbullets = [];
     let BHgameRunning = false;
     let BHgameOver = false;
@@ -1470,11 +1377,11 @@ Please input a password to continue.
       BHplayer.y = y - BHrect.top;
     }
 
-    BHcanvas.addEventListener(&quot;mousemove&quot;, e =&gt; {
-      if (BHgameRunning) updateBHPlayerPosition(e.clientX, e.clientY);
+    BHcanvas.addEventListener(&quot;mousemove&quot;, (e) =&gt;  {
+    	if (BHgameRunning) updateBHPlayerPosition(e.clientX, e.clientY);
     });
 
-    BHcanvas.addEventListener(&quot;touchmove&quot;, e =&gt; {
+    BHcanvas.addEventListener(&quot;touchmove&quot;,  (e) =&gt; {
       if (BHgameRunning &amp;&amp; e.touches.length &gt; 0) {
         updateBHPlayerPosition(e.touches[0].clientX, e.touches[0].clientY);
       }
@@ -1542,14 +1449,21 @@ Please input a password to continue.
     }
 
 function drawEndScreen(message, showRestart = false) {
+  const BHendText = document.getElementById(&quot;BHendText&quot;);
+  const BHrestartButton = document.getElementById(&quot;BHrestartButton&quot;)
   BHendMessage.style.display = &quot;block&quot;;
-  document.getElementById(&quot;BHendText&quot;).textContent = message;
-  document.getElementById(&quot;BHrestartButton&quot;).style.display = showRestart ? &quot;inline-block&quot; : &quot;none&quot;;
+  if (BHendText) {
+  	BHendText.textContent = message;
+  }
+  if (BHrestartButton) {
+  	BHrestartButton.style.display = showRestart ? &quot;inline-block&quot; : &quot;none&quot;;
+  }
 }
 
     let BHlastTime = null;
 
     function gameLoop(BHtimestamp) {
+      if (!BHgameRunning) return;
       if (!BHstartTime) BHstartTime = BHtimestamp;
       const BHelapsed = BHtimestamp - BHstartTime;
       const BHremaining = Math.max(0, BHGAME_DURATION - BHelapsed);
@@ -1577,7 +1491,7 @@ function drawEndScreen(message, showRestart = false) {
         drawBHPlayer();
         drawBHBullets();
 
-        requestAnimationFrame(gameLoop);
+        BHrafId = requestAnimationFrame(gameLoop);
         
       }
     }
@@ -1599,31 +1513,44 @@ function drawEndScreen(message, showRestart = false) {
       BHendMessage.style.display = &quot;none&quot;;
       BHstartScreen.style.display = &quot;none&quot;;
 
-      requestAnimationFrame(gameLoop);
+      BHrafId = requestAnimationFrame(gameLoop);
     }
 
 function endGame(won) {
   BHgameRunning = false;
   drawEndScreen(won ? &quot;🎉 You Survived!&quot; : &quot;💀 Game Over&quot;, !won);
+  if (won) {
+    setTimeout(BHteardown, 1000);
+  }
+}
+
+function BHteardown() {
+  BHgameRunning = false;
+  if (BHrafId !== null) {
+    cancelAnimationFrame(BHrafId);
+    BHrafId = null;
+  }
 }
   &lt;/script&gt;
 &lt;/body&gt;
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="15" name="arjs" tags="" position="675,150" size="100,100">
+</tw-passagedata><tw-passagedata pid="14" name="arjs" tags="" position="675,150" size="100,100">
     &lt;a-scene embedded arjs=&#39;displayWidth: 600; displayHeight: 400; canvasWidth: 600; canvasHeight: 400;&#39;&gt;
       &lt;a-marker preset=&quot;hiro&quot;&gt;
      &lt;a-box position=&quot;0 0 0&quot; 
                material=&quot;color: red; transparent: true; opacity: 0.50;&quot;&gt;
         &lt;/a-box&gt;
       &lt;/a-marker&gt;
-    &lt;/a-scene&gt;</tw-passagedata><tw-passagedata pid="16" name="Henrietta 3" tags="Henrietta" position="1175,350" size="100,100">//...seek out the sigils of old...they hold your next secret...//
+    &lt;/a-scene&gt;</tw-passagedata><tw-passagedata pid="15" name="Henrietta 3" tags="Henrietta" position="1175,350" size="100,100">&lt;h2&gt;//...seek out the sigils of old...
+...they hold your next secret.//&lt;/h2&gt;
 
 &lt;img src=&quot;sigilchart.png&quot; width=&quot;60%&quot; height=&quot;auto&quot;&gt;
 
-Enter the password.
+Enter the secret word:
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1648,17 +1575,16 @@ Enter the password.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="17" name="Henrietta 4" tags="Henrietta" position="1300,350" size="100,100">//...seek the following symbol...//
-
-&lt;p style=&quot;font-size:360%;&quot;&gt;🌟&lt;/p&gt;
-
-//...there the way shall open to you...//
+</tw-passagedata><tw-passagedata pid="16" name="Henrietta 4" tags="Henrietta" position="1300,350" size="100,100">&lt;h2&gt;//...seek the following symbol...//&lt;/h2&gt;
+&lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;🌟&lt;/p&gt;
+&lt;h2&gt;//...there the way shall open to you.//&lt;/h2&gt;
 
 Enter the password.
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1684,19 +1610,18 @@ Enter the password.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $blinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Rose 3" tags="Rose" position="1175,200" size="100,100">//...seek the following symbol...//
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Rose 3" tags="Rose" position="1175,200" size="100,100">&lt;h2&gt;//...seek the following symbol...//&lt;/h2&gt;
+&lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;🔮&lt;/p&gt;
+&lt;h2&gt;//...there the way shall open to you.//&lt;/h2&gt;
 
-&lt;p style=&quot;font-size:360%;&quot;&gt;🔮&lt;/p&gt;
-
-//...there the way shall open to you...//
-
-Enter the password.
+Enter the secret:
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1721,14 +1646,14 @@ Enter the password.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Rose 4" tags="Rose" position="1300,200" size="100,100">//...find the Ouija Board...//
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Rose 4" tags="Rose" position="1300,200" size="100,100">&lt;h2&gt;//...find the Ouija Board...//&lt;/h2&gt;
+&lt;h2&gt;//...use the planchette to uncover its secret.//&lt;/h2&gt;
 
-//...use the planchette to uncover its secret...//
-
-Enter the password.
+What is the Ouija telling you?
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
-&lt;&lt;button &quot;Check Password&quot;&gt;&gt;
+&lt;&lt;button &quot;Submit&quot;&gt;&gt;
 	&lt;&lt;if _answer is &quot;&quot;&gt;&gt;
 		/% They have not supplied an answer. %/
 		&lt;&lt;script&gt;&gt;UI.alert(&quot;You did not supply a password!&quot;);&lt;&lt;/script&gt;&gt;
@@ -1754,11 +1679,23 @@ Enter the password.
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $pinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="End" tags="General" position="675,450" size="100,100">You&#39;ve allowed the spirits to
-&lt;h2&gt;RAVE IN PEACE&lt;/h2&gt;</tw-passagedata><tw-passagedata pid="21" name="Answer Keys" tags="" position="750,650" size="100,100">Oswald 1: pushing up daisies
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="End" tags="General" position="675,450" size="100,100">You&#39;ve allowed the spirits to
+&lt;h2&gt;RAVE IN PEACE&lt;/h2&gt;
+
+
+
+
+
+
+Developed by
+Lockwood Immersive 
+for
+The Handeye Society
+2025 </tw-passagedata><tw-passagedata pid="20" name="Answer Keys" tags="" position="750,650" size="100,100">Oswald 1: pushing up daisies
 Oswald 2: possess
 Oswald 3: shade
 Oswald 4: crypt
@@ -1776,10 +1713,10 @@ Henrietta 4: charm
 Clyde 1: bit the dust
 Clyde 2: MINIGAME (N/A)
 Clyde 3: expel
-Clyde 4: visage</tw-passagedata><tw-passagedata pid="22" name="Restart" tags="General" position="550,575" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
+Clyde 4: visage</tw-passagedata><tw-passagedata pid="21" name="Restart" tags="General" position="550,575" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
 &lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
 &lt;&lt;goto &quot;Opening&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Save state code" tags="" position="425,525" size="100,100">/*&lt;&lt;script&gt;&gt;if (Save.browser.size &gt; 0) {
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Save state code" tags="" position="425,525" size="100,100">/*&lt;&lt;script&gt;&gt;if (Save.browser.size &gt; 0) {
     Save.browser.continue()
         .catch(error =&gt; {
             /* Failure.  Handle the error. */
@@ -1789,7 +1726,7 @@ Clyde 4: visage</tw-passagedata><tw-passagedata pid="22" name="Restart" tags="Ge
 }
 else {
     /* No browser saves exist. */
-}&lt;&lt;/script&gt;&gt;*/</tw-passagedata><tw-passagedata pid="24" name="Oswald 2" tags="WaG Oswald" position="1050,50" size="100,100">&lt;html lang=&quot;en&quot;&gt;
+}&lt;&lt;/script&gt;&gt;*/</tw-passagedata><tw-passagedata pid="23" name="Oswald 2" tags="WaG Oswald" position="1050,50" size="100,100">&lt;html lang=&quot;en&quot;&gt;
 &lt;&lt;nobr&gt;&gt;&lt;style&gt;
 body{
   		-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -1901,6 +1838,7 @@ body{
     &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+&lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Oswald 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
