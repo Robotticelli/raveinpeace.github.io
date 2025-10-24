@@ -224,6 +224,11 @@ h3 {
   	padding:1rem;
 }
 
+a.link-external::after {
+	visibility: hidden;
+	content: "";
+}
+
 /*Whack a Ghost Game*/
 
 body.WaG {
@@ -880,9 +885,9 @@ body{
 &lt;/body&gt;
 &lt;/tw-raw&gt;
 &lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek the following symbol...//&lt;/p&gt;
-&lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;💪&lt;/p&gt;
-&lt;p class=&quot;h2-like&quot;&gt;//...There the way shall open to you.//&lt;/p&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Clyde 3" tags="Clyde" position="1175,500" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek out the ritual demanding rings around the dead. Let the skull guide you...//&lt;/p&gt;
+&lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;💀&lt;/p&gt;
+
 
 Record the secret word: 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
@@ -913,12 +918,10 @@ Record the secret word:
 &lt;&lt;/button&gt;&gt;
 
 &lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 4" tags="Clyde" position="1300,500" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek the following symbol...//&lt;/p&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Clyde 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Clyde 4" tags="Clyde" position="1300,500" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek the mirror to reality, the secret lies within...//&lt;/p&gt;
 &lt;p style=&quot;font-size:360%;&quot;&gt;🪞&lt;/p&gt;
-&lt;p class=&quot;h2-like&quot;&gt;//...There the way shall open to you.//&lt;/p&gt;
 
-Look deeply inwards and &lt;strong&gt;B&lt;/strong&gt;urn the candles th&lt;strong&gt;R&lt;/strong&gt;ee.
-One at a time will it &lt;strong&gt;G&lt;/strong&gt;ive the cursed word to thee.
+&lt;img src=&quot;mirror_note.png&quot; width=&quot;90%&quot; height=&quot;auto&quot;&gt;
 
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
 
@@ -1247,7 +1250,7 @@ How did they pass?
               dy = -dy;
               b.status = 0;
               if (BBcheckWin()) {
-                window.winner(&quot;Rose 3&quot;);
+                window.winner(&quot;Rose 4&quot;);
               }
             }
           }
@@ -1372,7 +1375,7 @@ How did they pass?
 &lt;/body&gt;
 
 &lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Henrietta 2" tags="BH Henrietta" position="1050,350" size="100,100">&lt;body&gt;
+&lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Rose 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Henrietta 2" tags="BH Henrietta" position="1050,350" size="100,100">&lt;body&gt;
   &lt;div id=&quot;BHgameContainer&quot;&gt;
     &lt;div id=&quot;BHhud&quot;&gt;
       &lt;div id=&quot;BHlives&quot;&gt;Lives: 3&lt;/div&gt;
@@ -1582,7 +1585,7 @@ function BHteardown() {
 &lt;/body&gt;
 &lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="14" name="arjs" tags="" position="675,150" size="100,100">
+</tw-passagedata><tw-passagedata pid="14" name="arjs" tags="" position="500,800" size="100,100">
     &lt;a-scene embedded arjs=&#39;displayWidth: 600; displayHeight: 400; canvasWidth: 600; canvasHeight: 400;&#39;&gt;
       &lt;a-marker preset=&quot;hiro&quot;&gt;
      &lt;a-box position=&quot;0 0 0&quot; 
@@ -1624,9 +1627,8 @@ Enter the secret word:
 
 &lt;&lt;button &quot;Back to Start&quot;&gt;&gt;&lt;&lt;goto &quot;0.1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button &quot;DEBUG ONLY Next&quot;&gt;&gt;&lt;&lt;goto &quot;Henrietta 4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="16" name="Henrietta 4" tags="Henrietta" position="1300,350" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek the following symbol...//&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="16" name="Henrietta 4" tags="Henrietta" position="1300,350" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//...Seek the Tarot Reader...//&lt;/p&gt;
 &lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;🌟&lt;/p&gt;
-&lt;p class=&quot;h2-like&quot;&gt;//...There the way shall open to you.//&lt;/p&gt;
 
 What was divined?
 &lt;span class =&quot;inputAnswer&quot;&gt;&lt;&lt;textbox &quot;_answer&quot; &quot;&quot;&gt;&gt;&lt;/span&gt;
@@ -1661,7 +1663,7 @@ What was divined?
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $blinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Rose 3" tags="Rose" position="1175,200" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//..Seek the following symbol...//&lt;/p&gt;
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Rose 3" tags="Rose" position="900,800" size="100,100">&lt;p class=&quot;h2-like&quot;&gt;//..Seek the following symbol...//&lt;/p&gt;
 &lt;p style=&quot;font-size:360%; margin:0;&quot;&gt;🔮&lt;/p&gt;
 &lt;p class=&quot;h2-like&quot;&gt;//...There the way shall open to you.//&lt;/p&gt;
 
@@ -1730,7 +1732,7 @@ What is the Ouija telling you?
 &lt;&lt;button &quot;DEBUG ONLY: HOME&quot;&gt;&gt;
 &lt;&lt;set $pinky_done to true&gt;&gt;
 &lt;&lt;goto &quot;0.1&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="End" tags="General" position="675,450" size="100,100">You&#39;ve allowed the spirits to
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="End" tags="General" position="700,500" size="100,100">You&#39;ve allowed the spirits to
 &lt;p class=&quot;h2-like&quot;&gt;RAVE IN PEACE&lt;/p&gt;
 
 &lt;em&gt;Find Augusta to recieve your reward.&lt;/em&gt; 
@@ -1746,7 +1748,7 @@ The Handeye Society
 &lt;img src=&quot;images/Lockwood-Icon.png&quot; /&gt;&lt;/a&gt;
 	&lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="20" name="Answer Keys" tags="" position="750,650" size="100,100">Oswald 1: pushing up daisies
+</tw-passagedata><tw-passagedata pid="20" name="Answer Keys" tags="" position="800,800" size="100,100">Oswald 1: pushing up daisies
 Oswald 2: possess
 Oswald 3: shade
 Oswald 4: crypt
@@ -1764,10 +1766,10 @@ Henrietta 4: charm
 Clyde 1: bit the dust
 Clyde 2: MINIGAME (N/A)
 Clyde 3: expel
-Clyde 4: visage</tw-passagedata><tw-passagedata pid="21" name="Restart" tags="General" position="550,575" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
+Clyde 4: visage</tw-passagedata><tw-passagedata pid="21" name="Restart" tags="General" position="575,500" size="100,100">&lt;&lt;button &quot;Reset Data?&quot;&gt;&gt;
 &lt;&lt;set $inky_done to false, $blinky_done to false, $pinky_done to false, $clyde_done to false&gt;&gt;
 &lt;&lt;goto &quot;Opening&quot;&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Save state code" tags="" position="425,525" size="100,100">/*&lt;&lt;script&gt;&gt;if (Save.browser.size &gt; 0) {
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Save state code" tags="" position="600,800" size="100,100">/*&lt;&lt;script&gt;&gt;if (Save.browser.size &gt; 0) {
     Save.browser.continue()
         .catch(error =&gt; {
             /* Failure.  Handle the error. */
