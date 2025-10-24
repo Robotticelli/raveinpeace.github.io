@@ -1122,6 +1122,8 @@ How did they pass?
     const ctx = canvas.getContext(&quot;2d&quot;);
 
     let ballRadius = 10;
+    let ballSpeed = 50;
+    let ballLastTime = -1;
     let x, y, dx, dy;
 
     let paddleHeight = 10;
@@ -1268,6 +1270,7 @@ How did they pass?
       dx = 4;
       dy = -4;
       paddleX = (canvas.width - paddleWidth) / 2;
+      ballLastTime = -1;
     }
 
     function BBdrawOverlay(title, button) {
@@ -1288,6 +1291,12 @@ How did they pass?
     }
 
     function BBdraw() {
+      const now = performance.now()
+      if (ballLastTime &lt; 0)
+      	ballLastTime = now;
+      const delta = (now - ballLastTime) / 1000.0;
+      ballLastTime = now;
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       BBdrawBricks();
@@ -1315,8 +1324,8 @@ How did they pass?
         }
       }
 
-      x += dx;
-      y += dy;
+      x += dx * delta * ballSpeed;
+      y += dy * delta * ballSpeed;
 
       requestAnimationFrame(BBdraw);
     }
