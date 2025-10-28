@@ -1437,13 +1437,6 @@ What happened to Henrietta?
     const BHstartScreen = document.getElementById(&quot;BHstartScreen&quot;);
     const BHendMessage = document.getElementById(&quot;BHendMessage&quot;);
 
-    let BHplayer = {
-      x: BHcanvas.width / 2,
-      y: BHcanvas.height - 30,
-      radius: 12,
-      BHlives: 3
-    };
-
     // track the request animation frame
     let BHrafId = null;
     let BHbullets = [];
@@ -1451,14 +1444,8 @@ What happened to Henrietta?
     let BHgameOver = false;
     let BHgameWin = false;
     let BHstartTime = null;
+    let BHplayerSpeed = 10;
     const BHGAME_DURATION = 30000; // 30 seconds
-
-    function updateBHPlayerPosition(x, y) {
-      const BHrect = BHcanvas.getBoundingClientRect();
-      BHplayer.x = x - BHrect.left;
-      BHplayer.y = y - BHrect.top;
-    }
-
 
     resizeCanvas();
     BHcanvas.addEventListener(&quot;resize&quot;, resizeCanvas);
@@ -1470,14 +1457,48 @@ What happened to Henrietta?
     }
 
     BHcanvas.addEventListener(&quot;mousemove&quot;, (e) =&gt;  {
-    	if (BHgameRunning) updateBHPlayerPosition(e.clientX, e.clientY);
+      if (BHgameRunning) updateBHPlayerTargetPosition(e.clientX, e.clientY);
     });
 
     BHcanvas.addEventListener(&quot;touchmove&quot;,  (e) =&gt; {
       if (BHgameRunning &amp;&amp; e.touches.length &gt; 0) {
-        updateBHPlayerPosition(e.touches[0].clientX, e.touches[0].clientY);
+        updateBHPlayerTargetPosition(e.touches[0].clientX, e.touches[0].clientY);
       }
     }, { passive: false });
+
+
+    let BHplayer = {
+      x: BHcanvas.width / 2,
+      y: BHcanvas.height - 30,
+      radius: 12,
+      BHlives: 3
+    };
+
+    let BHplayerTarget = {
+      x: BHcanvas.width / 2,
+      y: BHcanvas.height - 30,
+    }
+
+    function updateBHPlayerPosition(delta) {
+      const dx = BHplayerTarget.x - BHplayer.x;
+      const dy = BHplayerTarget.y - BHplayer.y;
+      const dist = Math.hypot(dx, dy);
+
+      const move = BHplayerSpeed * delta;
+      if (move &lt; dist) {
+        BHplayer.x += (dx / dist) * move;
+        BHplayer.y += (dy / dist) * move;
+      } else {
+        BHplayer.x = BHplayerTarget.x;
+        BHplayer.y = BHplayerTarget.y;
+      }
+    }
+
+    function updateBHPlayerTargetPosition(x, y) {
+      const BHrect = BHcanvas.getBoundingClientRect();
+      BHplayerTarget.x = x - BHrect.left;
+      BHplayerTarget.y = y - BHrect.top;
+    }
 
     function spawnBullet(BHdifficulty) {
       const x = Math.random() * BHcanvas.width;
@@ -1579,6 +1600,7 @@ function drawEndScreen(message, showRestart = false) {
       if (!BHgameOver &amp;&amp; !BHgameWin) {
         BHctx.clearRect(0, 0, BHcanvas.width, BHcanvas.height);
 
+        updateBHPlayerPosition(BHdelta);
         updateBHBullets(BHdelta, BHdifficulty);
         checkCollisions();
 
