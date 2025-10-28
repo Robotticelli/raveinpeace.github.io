@@ -376,8 +376,8 @@ body.WaG {
     #BHgameContainer {
       margin:0 auto;
       position: relative;
-      width: 360px;
-      height: 480px;
+      width: 100%;
+      height: 50vh;
       box-shadow: 0 0 0 5px goldenrod, 0 0 0 10px gold;
       background: black;
       overflow: hidden;
@@ -386,11 +386,13 @@ body.WaG {
   position: absolute;
   top: 0;
   left: 0;
-  width: 360px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   display: block;
   background: #000;
   z-index: 1;
+  touch-action: none;
+  -ms-touch-action: none;
 }
     #BHhud {
       position: absolute;
@@ -1423,7 +1425,7 @@ What happened to Henrietta?
   &lt;button id=&quot;BHrestartButton&quot; onclick=&quot;startGame()&quot; style=&quot;margin-top: 10px;&quot;&gt;Restart&lt;/button&gt;
 &lt;/div&gt;
 
-    &lt;canvas id=&quot;BHgameCanvas&quot; width=&quot;360&quot; height=&quot;480&quot;&gt;&lt;/canvas&gt;
+    &lt;canvas id=&quot;BHgameCanvas&quot;&gt;&lt;/canvas&gt;
   &lt;/div&gt;
 
   &lt;script&gt;
@@ -1455,6 +1457,16 @@ What happened to Henrietta?
       const BHrect = BHcanvas.getBoundingClientRect();
       BHplayer.x = x - BHrect.left;
       BHplayer.y = y - BHrect.top;
+    }
+
+
+    resizeCanvas();
+    BHcanvas.addEventListener(&quot;resize&quot;, resizeCanvas);
+
+    function resizeCanvas() {
+      const BHrect = BHcanvas.getBoundingClientRect();
+      BHcanvas.width = BHrect.width;   // set actual drawing resolution
+      BHcanvas.height = BHrect.height;
     }
 
     BHcanvas.addEventListener(&quot;mousemove&quot;, (e) =&gt;  {
